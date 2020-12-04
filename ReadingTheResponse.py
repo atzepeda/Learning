@@ -6,7 +6,7 @@
 
 import requests
 
-url = "https://www.tapology.com/fightcenter/fighters/13893-Jack-Hermansson"
+url = "https://www.sherdog.com/fighter/Jack-Hermansson-61146"
 
 response = requests.get(url)
 Indicators = ["Previous Close",
@@ -32,8 +32,8 @@ print(response.status_code)
 
 htmlText = response.text
 
-splitList = htmlText.split("Name")
-print(len(splitList))
+splitList = htmlText.split("final_result")
+print(splitList)
 
 #stringExample = "AGbCbDbE"
 #print(stringExample.split("b"))
