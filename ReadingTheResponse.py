@@ -6,7 +6,7 @@
 
 import requests
 
-url = "http://finance.yahoo.com/quote/AAPL?p=AAPL"
+url = "https://www.tapology.com/fightcenter/fighters/13893-Jack-Hermansson"
 
 response = requests.get(url)
 Indicators = ["Previous Close",
@@ -27,10 +27,12 @@ Indicators = ["Previous Close",
             "1y Target Est"]
 print(response)
 print(response.status_code)
+#print(response.text)
+
 
 htmlText = response.text
 
-splitList = htmlText.split("Previous Close")
+splitList = htmlText.split("Name")
 print(len(splitList))
 
 #stringExample = "AGbCbDbE"
