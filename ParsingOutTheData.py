@@ -30,7 +30,7 @@ print(response.status_code)
 
 htmlText = response.text
 
-splitList = htmlText.split("Earnings Date")
+splitList = htmlText.split("Open")
 afterFirstSplit = splitList[1].split("\">")[1]
 afterSecondSplit = afterFirstSplit.split("</td>")
 data = afterSecondSplit[0]
