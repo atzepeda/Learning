@@ -4,7 +4,7 @@
 @author: maxschallwig
 """
 
-print(8%4)
+print(7%4)
 
 #a%b
 #a/b -> remainder after the division
