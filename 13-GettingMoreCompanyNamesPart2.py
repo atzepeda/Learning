@@ -15,9 +15,18 @@ wikiResponse = requests.get(wikiURL)
 data = {"Company":[]}
 
 wikiFirstParse = wikiResponse.text.split("0001555280")[0]
-print(wikiFirstParse[5000:10000])
-wikiDataTable = wikiFirstParse.split("Component Stocks")[0]
-print(wikiDataTable)
+wikiDataTable = wikiFirstParse.split("Component Stocks")[3]
+hyperLinkSplitWiki = wikiDataTable.split("href=")
+start = 4
+tracker = 0
+for position in range(len(hyperLinkSplitWiki)):
+    if position > start:
+        tracker = (position - (start + 1))%4
+        if tracker == 0:
+            tempData = hyperLinkSplitWiki[position].split('">')[1].split("</")[0]
+            data["Company"].append(tempData)
+#5->9->13
+print(data)
 Indicators = {"Previous Close":[],
             "Open":[],
             "Bid":[],
