@@ -3,7 +3,7 @@ import scrapy
 
 
 class CountriesSpider(scrapy.Spider):
-    name = 'countries'
+    name = 'fighters'
     allowed_domains = ['www.sherdog.com']
     start_urls = ['https://www.sherdog.com/fighter/Ovince-St-Preux-38842']
 
@@ -12,8 +12,10 @@ class CountriesSpider(scrapy.Spider):
         fighters = response.xpath("//div[@class='container']//div[@class='content']//div[@class='col_left']//div[@class='module fight_history']//h2[text()='Fight History - Pro']/following::node()//tr[@class='odd' or @class='even']")
         #countries = response.xpath("//td/a/text()").getall()
         for fighter in fighters:
-            name = fighter.xpath(".//a[starts-with(@href,'/fighter/')]/text()")
+            name = fighter.xpath(".//a[starts-with(@href,'/fighter/')]/text()").get()
+            event = fighter.xpath(".//a[starts-with(@href,'/events/')]/text()").get()
 
-        yield {
-            'fighter_name': name
-        }
+            yield {
+                'fighter_name': name,
+                'event_name': event
+            }
