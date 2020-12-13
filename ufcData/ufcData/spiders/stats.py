@@ -35,6 +35,7 @@ class StatsSpider(scrapy.Spider):
         })
 
     def parse(self, response):
+        print(response.body)
         date = response.xpath("//div[@class='tsp-cpd tsp-rpd tsp-flr']//span[@class='tsp-cp']/text()").get()
         yield {
             'date': date

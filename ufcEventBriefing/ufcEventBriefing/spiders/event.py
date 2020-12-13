@@ -9,6 +9,7 @@ class EventSpider(scrapy.Spider):
     
     script = '''
         function main(splash, args)
+            splash.private_mode_enabled = false
             url = args.url
             assert(splash:go(url))
             assert(splash:wait(1))
@@ -29,9 +30,13 @@ class EventSpider(scrapy.Spider):
     '''
 
     def start_requests(self):
-        yield SplashRequest(url="www.google.com", callback=self.parse, endpoint="execute", args={
+        yield SplashRequest(url="https://www.google.com", callback=self.parse, endpoint="execute", args={
             'lua_source': self.script
         })
 
     def parse(self, response):
         print(response.body)
+        date = response.xpath("//div[@class='tsp-cpd tsp-rpd tsp-flr']//span[@class='tsp-cp']/text()").get()
+        yield {
+            'date': date
+        }
