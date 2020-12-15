@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import globals
 from twisted.internet import reactor, defer
 from scrapy_splash import SplashRequest
 from scrapy.crawler import CrawlerRunner
@@ -7,8 +8,6 @@ from scrapy.utils.log import configure_logging
 from scrapy.utils.project import get_project_settings
 
 import datetime
-
-#global nextCard
 
 class EventSpider(scrapy.Spider):
     name = 'event'
@@ -57,12 +56,14 @@ class EventSpider(scrapy.Spider):
                 self.nextCard = response.xpath("//a[@aria-selected='true']/div/span/div/span/span/text()").get()
                 print("OPTION A")
                 print(self.nextCard)
+                globals.q.put(self.nextCard)
 
             else:
                 print((datetime.datetime.now() - dateObj).total_seconds())
                 self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
                 print("OPTION B")
                 print(self.nextCard)
+                globals.q.put(self.nextCard)
         print(self.nextCard)
 
 class fighterSpider(scrapy.Spider):
@@ -77,7 +78,7 @@ class fighterSpider(scrapy.Spider):
             
             input_box = assert(splash:select("#siteSearch"))
             input_box:focus()
-            input_box:send_text(splash.event)
+            input_box:send_text(splash.args.event)
             assert(splash:wait(3))
             
             btn = assert(splash:select("#search"))
@@ -91,16 +92,16 @@ class fighterSpider(scrapy.Spider):
     '''
 
     def start_requests(self):
-        print(EventSpider.nextCard)
+        event = globals.q.get()
+        print(event)
         print("HERE WE ARE!!!!!!!!!!!!!!!!!!!!!!")
         yield SplashRequest(url="https://www.tapology.com", callback=self.parse, endpoint="execute", args={
             'lua_source': self.fighterScript,
-            'wait': 5,
-            'event': EventSpider.nextCard
+            'event': event
         })
     
     def parse(self, response):
-        event = response.xpath("//div[@class='searchResultsEvent']/table/tbody/tr[1]/text()").get()
+        event = response.xpath("//div[@class='searchResultsEvent']/table/tbody/tr[2]/td[1]/a/@href").get()
         print(event)
         print("**********************************************")
 
