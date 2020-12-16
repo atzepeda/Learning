@@ -53,14 +53,16 @@ class EventSpider(scrapy.Spider):
             dateObj = datetime.datetime.strptime(cardDate, '%a, %b %d, %I:%M %p')
             if(datetime.datetime.now() - dateObj).total_seconds() > 0:
                 print((datetime.datetime.now() - dateObj).total_seconds())
-                self.nextCard = response.xpath("//a[@aria-selected='true']/div/span/div/span/span/text()").get()
+                #self.nextCard = response.xpath("//a[@aria-selected='true']/div/span/div/span/span/text()").get()
+                self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
                 print("OPTION A")
                 print(self.nextCard)
                 globals.q.put(self.nextCard)
 
             else:
                 print((datetime.datetime.now() - dateObj).total_seconds())
-                self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
+                #self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
+                self.nextCard = response.xpath("//a[@aria-selected='true']/div/span/div/span/span/text()").get()
                 print("OPTION B")
                 print(self.nextCard)
                 globals.q.put(self.nextCard)
@@ -68,7 +70,11 @@ class EventSpider(scrapy.Spider):
 
 class fighterSpider(scrapy.Spider):
     name = 'fighter'
-    allowed_domains = ['www.tapology.com']
+    allowed_domains = ['tapology.com']
+    
+    BASE_URL = 'https://tapology.com'
+
+    user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
 
     fighterScript = '''
         function main(splash, args)
@@ -95,15 +101,32 @@ class fighterSpider(scrapy.Spider):
         event = globals.q.get()
         print(event)
         print("HERE WE ARE!!!!!!!!!!!!!!!!!!!!!!")
-        yield SplashRequest(url="https://www.tapology.com", callback=self.parse, endpoint="execute", args={
+        yield SplashRequest(url="https://www.tapology.com", callback=self.getEventPage, endpoint="execute", args={
             'lua_source': self.fighterScript,
             'event': event
         })
     
-    def parse(self, response):
+    def getEventPage(self, response):
         event = response.xpath("//div[@class='searchResultsEvent']/table/tbody/tr[2]/td[1]/a/@href").get()
-        print(event)
-        print("**********************************************")
+        #total_url = self.BASE_URL + event
+        #print(total_url)
+        yield SplashRequest(response.urljoin(event), callback=self.parse, headers={
+            'User-Agent': self.user_agent
+        })
+            
+
+    def parse(self, response):
+        print(response.xpath("//h1/text()").get())
+        #print(response.xpath("//div[@id='content']/ul/li[1]/div/div[3]/div/a/text()"))
+        #print(response.xpath("//div[@id='content']/ul/child::li/div/div[3]/div/a/text()").get())
+        for fight in response.xpath("//div[@id='content']/ul/child::li"):
+            #print(fight.xpath("//div/text()").get())
+            yield {
+                'fighterOne': fight.xpath(".//div/div[3]/div/a/text()").get(),
+                'fighterTwo': fight.xpath(".//div/div[5]/div/a/text()").get()
+            }
+
+
 
 configure_logging()
 runner = CrawlerRunner(get_project_settings())
