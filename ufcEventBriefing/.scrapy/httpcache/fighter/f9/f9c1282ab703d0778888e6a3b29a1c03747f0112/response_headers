@@ -1,0 +1,19 @@
+Date: Mon, 28 Dec 2020 01:34:29 GMT
+Content-Type: text/plain;charset=UTF-8
+Set-Cookie: __cfduid=db5ef0cb8d99ab341881cb29507070a011609119269; expires=Wed, 27-Jan-21 01:34:29 GMT; path=/; domain=.sherdog.com; HttpOnly; SameSite=Lax; Secure
+Content-Security-Policy: upgrade-insecure-requests;
+Cache-Control: public, max-age=7200
+Edge-Control: max-age=300, s-maxage=300
+X-Generated: Mon, 28 Dec 2020 01:34:29 GMT
+X-Served-By: sdc-fe-httpd-prd-7776994b9b-8gkhb
+X-Varnish: 39825979
+Via: 1.1 varnish-v4
+X-Cache: MISS from sdc-fe-varnish-prd-7954879b69-hz44l
+Cf-Cache-Status: EXPIRED
+Expires: Mon, 28 Dec 2020 03:34:29 GMT
+Accept-Ranges: bytes
+Cf-Request-Id: 0748949ac70000ea0c88b31000000001
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Vary: Accept-Encoding
+Server: cloudflare
+Cf-Ray: 60878a0addb6ea0c-IAD

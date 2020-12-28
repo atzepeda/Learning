@@ -1,0 +1,11 @@
+{
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en",
+        "Cookie": "__cfduid=db5ef0cb8d99ab341881cb29507070a011609119269",
+        "Lua_Source": "\n        function main(splash, args)\n            assert(splash:go(args.url))\n            assert(splash:wait(0.5))\n            return splash:html()\n        end\n    ",
+        "Referer": "https://www.sherdog.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+    },
+    "url": "https://www.sherdog.com/events/UFC-Fight-Night-183-Thompson-vs-Neal-87646"
+}

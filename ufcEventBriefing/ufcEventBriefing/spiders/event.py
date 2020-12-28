@@ -1,8 +1,11 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import globals
+from twisted.internet import reactor, defer
 from scrapy_splash import SplashRequest
 from scrapy.crawler import CrawlerRunner
+from scrapy.utils.log import configure_logging
+from scrapy.utils.project import get_project_settings
 import datetime
 
 
@@ -10,6 +13,7 @@ class EventSpider(scrapy.Spider):
     name = 'event'
     allowed_domains = ['www.google.com']
     nextCard = ''
+    USER_AGENT = "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36"
     
     eventScript = '''
         function main(splash, args)
@@ -33,6 +37,7 @@ class EventSpider(scrapy.Spider):
         print("EVERYTHING IS GOING ACCORDING TO PLAN")
         yield SplashRequest(url="https://www.google.com", callback=self.parse, endpoint="execute", args={
             'lua_source': self.eventScript,
+            'user-agent': self.USER_AGENT
         })
 
     def parse(self, response):
@@ -44,10 +49,11 @@ class EventSpider(scrapy.Spider):
             self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
         else:
             dateObj = datetime.datetime.strptime(cardDate, '%a, %b %d, %I:%M %p')
+            #IF: 
             if(datetime.datetime.now() - dateObj).total_seconds() > 0:
                 print((datetime.datetime.now() - dateObj).total_seconds())
-                #self.nextCard = response.xpath("//a[@aria-selected='true']/div/span/div/span/span/text()").get()
-                self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
+                self.nextCard = response.xpath("//a[@aria-selected='true']/div/span/div/span/span/text()").get()
+                #self.nextCard = response.xpath("//a[@tabindex='0']/following-sibling::a[1]/div/span/div/span/span/text()").get()
                 print("OPTION A")
                 print(self.nextCard)
                 globals.q.put(self.nextCard)
@@ -61,3 +67,74 @@ class EventSpider(scrapy.Spider):
                 globals.q.put(self.nextCard)
         print(self.nextCard)
 
+class fighterSpider(scrapy.Spider):
+    name = 'fighter'
+    allowed_domains = ['sherdog.com']
+    
+    BASE_URL = 'https://sherdog.com'
+
+    user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+
+    fighterScript = '''
+    function main(splash, args)
+        splash.private_mode_enabled = false
+        assert(splash:go(args.url))
+            assert(splash:wait(1))
+        
+        input_box = assert(splash:select(".search.autocomplete"))
+        input_box:focus()
+        input_box:send_text(splash.args.event)
+        assert(splash:wait(1))
+        
+        btn = assert(splash:select(".fight_finder > div > div > form > input:nth-child(2)"))
+        btn:mouse_click()
+        assert(splash:wait(1))
+        
+        splash:set_viewport_full()
+        
+        return splash:html()
+    end
+    '''
+
+    defaultScript = '''
+        function main(splash, args)
+            assert(splash:go(args.url))
+            assert(splash:wait(0.5))
+            return splash:html()
+        end
+    '''
+
+    def start_requests(self):
+        event = globals.q.get()
+        print(event)
+        print("HERE WE ARE!!!!!!!!!!!!!!!!!!!!!!")
+        yield SplashRequest(url="https://www.sherdog.com", callback=self.getEventPage, endpoint="execute", args={
+            'lua_source': self.fighterScript,
+            'event': event,
+            'user-agent': self.user_agent
+        })
+
+    def getEventPage(self, response):
+        event = response.xpath("//div[@class='content table']/table/tbody/tr[2]/td[2]/a/@href").get()
+        total_url = self.BASE_URL + event
+        print(total_url)
+        yield SplashRequest(response.urljoin(event), callback=self.parse, headers={
+            'User-Agent': self.user_agent,
+            'lua_source': self.defaultScript
+        })
+    
+    def parse(self, response):
+        print("ALMOST HAVE IT COMPLETELY RECOMPILED")
+        print(response.xpath("//h1/span/text()").get())
+
+configure_logging()
+runner = CrawlerRunner(get_project_settings())
+
+@defer.inlineCallbacks
+def crawl():
+    yield runner.crawl(EventSpider)
+    yield runner.crawl(fighterSpider)
+    reactor.stop()
+
+crawl()
+reactor.run()

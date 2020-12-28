@@ -1,0 +1,11 @@
+{
+    "cookies": [],
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en",
+        "User-Agent": "Scrapy/2.4.1 (+https://scrapy.org)"
+    },
+    "lua_source": "\n        function main(splash, args)\n            splash.private_mode_enabled = false\n            url = args.url\n            assert(splash:go(url))\n            assert(splash:wait(3))\n            input_box = assert(splash:select(\".gLFyf.gsfi\"))\n            input_box:focus()\n            input_box:send_text(\"ufc\")\n            assert(splash:wait(3))\n            btn = assert(splash:select(\".gNO89b\"))\n            btn:mouse_click()\n            assert(splash:wait(3))\n            splash:set_viewport_full()\n            return splash:html()\n        end\n    ",
+    "url": "https://www.google.com",
+    "user-agent": "Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.93 Safari/537.36"
+}
