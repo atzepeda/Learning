@@ -125,7 +125,62 @@ class fighterSpider(scrapy.Spider):
     
     def parse(self, response):
         print("ALMOST HAVE IT COMPLETELY RECOMPILED")
-        print(response.xpath("//h1/span/text()").get())
+        fight_list = []
+        fighters = response.xpath("//div[@class='content table']/table/tbody/tr[@class='table_head']/following-sibling::node()[@class='even' or @class='odd']")
+        for fighter in fighters:
+            fighterOne = fighter.xpath(".//td[2]/div/a[starts-with(@href, '/fighter/')]/span/text()").get()
+            fighterTwo = fighter.xpath(".//td[4]/div/a[starts-with(@href, '/fighter/')]/span/text()").get()
+            fight = {
+                'fighterOne': fighterOne,
+                'fighterTwo': fighterTwo
+            }
+            fight_list.append(fight)
+        #print(fight_list)
+        globals.q.put(fight_list)
+
+class statsSpider(scrapy.Spider):
+    name = 'stats'
+    allowed_domains = ['ufcstats.com/statistics/fighters']
+    
+    BASE_URL = 'http://ufcstats.com/statistics/fighters'
+
+    user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+
+    firstStatScript = '''
+        function main(splash, args)
+            splash.private_mode_enabled = false
+            assert(splash:go(args.url))
+            assert(splash:wait(1))
+            
+            input_box = assert(splash:select(".b-statistics__search-field"))
+            input_box:focus()
+            input_box:send_text(splash.args.lastName)
+            assert(splash:wait(1))
+            
+            btn = assert(splash:select(".b-statistics__search-btn"))
+            btn:mouse_click()
+            assert(splash:wait(1))
+            
+            splash:set_viewport_full()
+                    
+            return splash:html()
+        end
+    '''
+
+    def start_requests(self):
+        list_of_fights = globals.q.get()
+        print("WE'RE GOING ALL THE WAY THIS TIME")
+        lastName = list_of_fights[0].get('fighterOne').split()[1]
+        print(lastName)
+        yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=self.retrieve_stats, endpoint="execute", args={
+            'lua_source': self.firstStatScript,
+            'lastName': lastName,
+            'user-agent': self.user_agent
+        })
+
+    def retrieve_stats(self, response):
+        print("OH BABY")
+        print(response.xpath(".//a[@href='http://ufcstats.com/fighter-details/d0f3959b4a9747e6']/text()").get())
 
 configure_logging()
 runner = CrawlerRunner(get_project_settings())
@@ -134,6 +189,8 @@ runner = CrawlerRunner(get_project_settings())
 def crawl():
     yield runner.crawl(EventSpider)
     yield runner.crawl(fighterSpider)
+    yield runner.crawl(statsSpider)
+    #print(globals.q.get())
     reactor.stop()
 
 crawl()
