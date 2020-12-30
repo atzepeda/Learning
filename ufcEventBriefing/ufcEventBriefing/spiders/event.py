@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import scrapy
 import globals
+import requests
 from twisted.internet import reactor, defer
 from scrapy_splash import SplashRequest
 from scrapy.crawler import CrawlerRunner
@@ -140,9 +141,10 @@ class fighterSpider(scrapy.Spider):
 
 class statsSpider(scrapy.Spider):
     name = 'stats'
-    allowed_domains = ['ufcstats.com/statistics/fighters']
+    allowed_domains = ['ufcstats.com']
+    list_of_fights = []
     
-    BASE_URL = 'http://ufcstats.com/statistics/fighters'
+    BASE_URL = 'http://ufcstats.com'
 
     user_agent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
 
@@ -167,20 +169,56 @@ class statsSpider(scrapy.Spider):
         end
     '''
 
+    defaultScript = '''
+        function main(splash, args)
+            assert(splash:go(args.url))
+            assert(splash:wait(1))
+            return splash:html()
+        end
+    '''
+
+    firstName = ""
+    fakeLastName = ""
+
     def start_requests(self):
         list_of_fights = globals.q.get()
         print("WE'RE GOING ALL THE WAY THIS TIME")
         lastName = list_of_fights[0].get('fighterOne').split()[1]
+        self.firstName = list_of_fights[0].get('fighterOne').split()[0]
+        print(self.firstName)
         print(lastName)
-        yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=self.retrieve_stats, endpoint="execute", args={
+        yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=self.retrieve_fighter_page, endpoint="execute", args={
             'lua_source': self.firstStatScript,
             'lastName': lastName,
             'user-agent': self.user_agent
         })
 
-    def retrieve_stats(self, response):
+    def retrieve_fighter_page(self, response):
+        print("-----------------")
+        print(self.firstName)
         print("OH BABY")
-        print(response.xpath(".//a[@href='http://ufcstats.com/fighter-details/d0f3959b4a9747e6']/text()").get())
+        table = response.xpath("//table[@class='b-statistics__table']/tbody/tr")
+        for row in table:
+            fighterName = row.xpath(".//td/a/text()").get()
+            self.fakeLastName = fighterName
+            print(fighterName)
+            if(fighterName==self.firstName):
+                print("WE'VE GOT A MATCH")
+                link = row.xpath(".//td/a/@href").get()
+                print(link)
+                yield SplashRequest(url=link, callback=self.retrieve_fighter_stats, endpoint="execute", args={
+                    'lua_source': self.defaultScript,
+                    'user-agent': self.user_agent
+                })
+        yield SplashRequest(url="http://ufcstats.com/fighter-details/82a5152216251682", callback=self.retrieve_fighter_stats, endpoint="execute", args={
+                    'lua_source': self.defaultScript,
+                    'user-agent': self.user_agent
+                })
+    
+    def retrieve_fighter_stats(self, response):
+        print("Are we here?")
+        print(self.fakeLastName)
+        print(response.xpath("//i[@class='b-list__box-item-title']/text()").get())
 
 configure_logging()
 runner = CrawlerRunner(get_project_settings())
