@@ -2,6 +2,7 @@
 import scrapy
 import globals
 import requests
+import time
 from twisted.internet import reactor, defer
 from scrapy_splash import SplashRequest
 from scrapy.crawler import CrawlerRunner
@@ -177,58 +178,161 @@ class statsSpider(scrapy.Spider):
         end
     '''
 
-    firstName = ""
+    #firstName = ""
     fakeLastName = ""
 
     def start_requests(self):
+        fighterOneFirstName = []
+        fighterOneLastName = ""
+        fighterTwoFirstName = []
+        fighterTwoLastName = ""
+        fighterOneCount = 0
+        fighterTwoCount = 0
+
+        def my_callback_one(response):
+            name = len(fighterOneFirstName) - 2
+            print(name)
+            print("CALLBACK_ONE: " + fighterOneFirstName[name])
+            return self.retrieve_fighter_page(response, fighterOneFirstName[name])
+            
+        def my_callback_two(response):
+            name = len(fighterTwoFirstName) - 2
+            print(name)
+            print("CALLBACK_TWO: " + fighterTwoFirstName[name])
+            return self.retrieve_fighter_page(response, fighterTwoFirstName[name])
+
+        print("*************WE ARE GETTING STARTED HERE***************")
         list_of_fights = globals.q.get()
-        print("WE'RE GOING ALL THE WAY THIS TIME")
+
+        for fight in list_of_fights:
+            time.sleep(1)
+            #print(fight.get('fighterOne'))
+            #print(fight.get('fighterTwo'))
+            fighterOneFirstName.append(fight.get('fighterOne').split()[0])
+            fighterOneLastName = fight.get('fighterOne').split()[1]
+            print("MAKING CALL FOR: " + fighterOneFirstName[len(fighterOneFirstName) - 1] + " " + fighterOneLastName)
+            yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=my_callback_one, endpoint="execute", args={
+                'lua_source': self.firstStatScript,
+                'lastName': fighterOneLastName,
+                'user-agent': self.user_agent
+            })
+
+            fighterTwoFirstName.append(fight.get('fighterTwo').split()[0])
+            fighterTwoLastName = fight.get('fighterTwo').split()[1]
+            print("MAKING CALL FOR: " + fighterTwoFirstName[len(fighterTwoFirstName) - 1] + " " + fighterTwoLastName)
+            yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=my_callback_two, endpoint="execute", args={
+                'lua_source': self.firstStatScript,
+                'lastName': fighterTwoLastName,
+                'user-agent': self.user_agent
+            })
+            
+
+        '''
         lastName = list_of_fights[0].get('fighterOne').split()[1]
-        self.firstName = list_of_fights[0].get('fighterOne').split()[0]
-        print(self.firstName)
+        firstName = list_of_fights[0].get('fighterOne').split()[0]
+        print(firstName)
         print(lastName)
-        yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=self.retrieve_fighter_page, endpoint="execute", args={
+        def my_callback(response):
+            #print("IS THIS BEING TRIGGERED?")
+            return self.retrieve_fighter_page(response, firstName)
+        yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=my_callback, endpoint="execute", args={
             'lua_source': self.firstStatScript,
             'lastName': lastName,
             'user-agent': self.user_agent
         })
+        '''
 
-    def retrieve_fighter_page(self, response):
-        print("-----------------")
-        print(self.firstName)
-        print("OH BABY")
+    def retrieve_fighter_page(self, response, firstName):
+        print("-------------------------------------------")
+        print("Retrieving Page For: " + firstName)
+        print("URL: " + response.url)
         table = response.xpath("//table[@class='b-statistics__table']/tbody/tr")
+        lastName = response.xpath("//table[@class='b-statistics__table']/tbody/tr[2]/td[2]/a/text()").get()
+        count = 0
         for row in table:
             fighterName = row.xpath(".//td/a/text()").get()
-            self.fakeLastName = fighterName
             print(fighterName)
-            if(fighterName==self.firstName):
-                print("WE'VE GOT A MATCH")
+            #self.fakeLastName = fighterName
+            if(fighterName==firstName):
                 link = row.xpath(".//td/a/@href").get()
-                print(link)
+                print("URL TO HIT: " + link)
+                print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                count += 1
+                #return
                 yield SplashRequest(url=link, callback=self.retrieve_fighter_stats, endpoint="execute", args={
                     'lua_source': self.defaultScript,
                     'user-agent': self.user_agent
                 })
+            print("^^^^^NOT HIM")
+        if count == 0:
+            name = firstName + " " + lastName
+            replacement = {
+                'Name': name,
+                'Status': "NOT_FOUND"
+            }
+            yield replacement
+            print("NOTHING WAS FOUND")
+            print("###############################")
+        '''
         yield SplashRequest(url="http://ufcstats.com/fighter-details/82a5152216251682", callback=self.retrieve_fighter_stats, endpoint="execute", args={
                     'lua_source': self.defaultScript,
                     'user-agent': self.user_agent
                 })
+        '''
     
     def retrieve_fighter_stats(self, response):
-        print("Are we here?")
-        print(self.fakeLastName)
-        print(response.xpath("//i[@class='b-list__box-item-title']/text()").get())
+        #print("Are we here?")
+        #print(response.xpath("//span[@class='b-content__title-highlight']/text()").get().strip())
+        stats = {
+            'Name': response.xpath("//span[@class='b-content__title-highlight']/text()").get().strip(),
+            'Status': "FOUND"
+        }
+        fighterStatCols = response.xpath("//div[@class='b-list__info-box-left clearfix']/div/ul")
+        counter = 0
+        for stat in fighterStatCols:
+            if counter == 0:
+                stats[stat.xpath(".//li[1]/i/text()").get().strip()] = stat.xpath(".//li[1]/i/following-sibling::text()").get().strip()
+                stats[stat.xpath(".//li[2]/i/text()").get().strip()] = stat.xpath(".//li[2]/i/following-sibling::text()").get().strip()
+                stats[stat.xpath(".//li[3]/i/text()").get().strip()] = stat.xpath(".//li[3]/i/following-sibling::text()").get().strip()
+                stats[stat.xpath(".//li[4]/i/text()").get().strip()] = stat.xpath(".//li[4]/i/following-sibling::text()").get().strip()
+            else:
+                stats[stat.xpath(".//li[2]/i/text()").get().strip()] = stat.xpath(".//li[2]/i/following-sibling::text()").get().strip()
+                stats[stat.xpath(".//li[3]/i/text()").get().strip()] = stat.xpath(".//li[3]/i/following-sibling::text()").get().strip()
+                stats[stat.xpath(".//li[4]/i/text()").get().strip()] = stat.xpath(".//li[4]/i/following-sibling::text()").get().strip()
+                stats[stat.xpath(".//li[5]/i/text()").get().strip()] = stat.xpath(".//li[5]/i/following-sibling::text()").get().strip()
+            counter += 1
+            #print(stat.xpath(".//li[1]/i/following-sibling::text()").get())
+        yield stats
 
+
+        #print(response.xpath("//i[@class='b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width'][1]/text()").get().split()[0])
+        #print(response.xpath("//i[@class='b-list__box-item-title b-list__box-item-title_font_lowercase b-list__box-item-title_type_width'][1]/following-sibling::text()").get().split()[0])
+
+settings = get_project_settings()        
+settings.set('FEED_FORMAT', 'json')
+settings.set('FEED_URI', 'result.json')
 configure_logging()
-runner = CrawlerRunner(get_project_settings())
+
+runner = CrawlerRunner(settings)
 
 @defer.inlineCallbacks
 def crawl():
     yield runner.crawl(EventSpider)
     yield runner.crawl(fighterSpider)
     yield runner.crawl(statsSpider)
-    #print(globals.q.get())
+    '''
+    stock = {}
+    while globals.q.qsize() > 0:
+        stock.update(globals.q.get())
+    globals.q.put(stock)
+    
+    print("*****************************************")
+    while globals.q.qsize() > 0:
+        job = globals.q.get()
+        print(job)
+    print("*****************************************")
+    #return globals.q.get()
+    '''
     reactor.stop()
 
 crawl()

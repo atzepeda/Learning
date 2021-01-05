@@ -1,0 +1,12 @@
+{
+    "cookies": [],
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+    },
+    "lastName": "Kianzad",
+    "lua_source": "\n        function main(splash, args)\n            splash.private_mode_enabled = false\n            assert(splash:go(args.url))\n            assert(splash:wait(1))\n            \n            input_box = assert(splash:select(\".b-statistics__search-field\"))\n            input_box:focus()\n            input_box:send_text(splash.args.lastName)\n            assert(splash:wait(1))\n            \n            btn = assert(splash:select(\".b-statistics__search-btn\"))\n            btn:mouse_click()\n            assert(splash:wait(1))\n            \n            splash:set_viewport_full()\n                    \n            return splash:html()\n        end\n    ",
+    "url": "http://ufcstats.com/statistics/fighters",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+}
