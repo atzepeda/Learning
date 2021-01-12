@@ -1,0 +1,13 @@
+{
+    "cookies": [],
+    "event": "UFC on ABC: Holloway vs. Kattar",
+    "headers": {
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en",
+        "Cookie": "__cfduid=d8cffdac086d723beab47b0967527ddd81609979383",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+    },
+    "lua_source": "\n    function main(splash, args)\n        splash.private_mode_enabled = false\n        assert(splash:go(args.url))\n            assert(splash:wait(1))\n        \n        input_box = assert(splash:select(\".search.autocomplete\"))\n        input_box:focus()\n        input_box:send_text(splash.args.event)\n        assert(splash:wait(1))\n        \n        btn = assert(splash:select(\".fight_finder > div > div > form > input:nth-child(2)\"))\n        btn:mouse_click()\n        assert(splash:wait(1))\n        \n        splash:set_viewport_full()\n        \n        return splash:html()\n    end\n    ",
+    "url": "https://www.sherdog.com",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36"
+}

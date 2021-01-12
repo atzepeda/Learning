@@ -130,14 +130,14 @@ class fighterSpider(scrapy.Spider):
         fight_list = []
         fighters = response.xpath("//div[@class='content table']/table/tbody/tr[@class='table_head']/following-sibling::node()[@class='even' or @class='odd']")
         for fighter in fighters:
-            fighterOne = fighter.xpath(".//td[2]/div/a[starts-with(@href, '/fighter/')]/span/text()").get()
-            fighterTwo = fighter.xpath(".//td[4]/div/a[starts-with(@href, '/fighter/')]/span/text()").get()
+            fighterOne = fighter.xpath(".//td[2]/a[starts-with(@href, '/fighter/')]/span/text()").get()
+            fighterTwo = fighter.xpath(".//td[4]/a[starts-with(@href, '/fighter/')]/span/text()").get()
             fight = {
                 'fighterOne': fighterOne,
                 'fighterTwo': fighterTwo
             }
             fight_list.append(fight)
-        #print(fight_list)
+        print(fight_list)
         globals.q.put(fight_list)
 
 class statsSpider(scrapy.Spider):
@@ -180,6 +180,8 @@ class statsSpider(scrapy.Spider):
 
     #firstName = ""
     fakeLastName = ""
+    numberOne = 2
+    numberTwo = 2
 
     def start_requests(self):
         fighterOneFirstName = []
@@ -188,21 +190,38 @@ class statsSpider(scrapy.Spider):
         fighterTwoLastName = ""
         fighterOneCount = 0
         fighterTwoCount = 0
+        #numberOne = 2
+        #numberTwo = 2
 
         def my_callback_one(response):
-            name = len(fighterOneFirstName) - 2
+            if fighterOneCount == len(fighterOneFirstName):
+                name = len(fighterOneFirstName) - self.numberOne
+                self.numberOne -= 1
+            else:
+                name = len(fighterOneFirstName) - 2
+            
+            print(len(fighterOneFirstName))
             print(name)
             print("CALLBACK_ONE: " + fighterOneFirstName[name])
             return self.retrieve_fighter_page(response, fighterOneFirstName[name])
             
         def my_callback_two(response):
-            name = len(fighterTwoFirstName) - 2
+            if fighterTwoCount == len(fighterTwoFirstName):
+                name = len(fighterTwoFirstName) - self.numberTwo
+                self.numberTwo -= 1
+            else:
+                name = len(fighterTwoFirstName) - 2
+            
+            print(len(fighterTwoFirstName))
             print(name)
             print("CALLBACK_TWO: " + fighterTwoFirstName[name])
             return self.retrieve_fighter_page(response, fighterTwoFirstName[name])
 
         print("*************WE ARE GETTING STARTED HERE***************")
         list_of_fights = globals.q.get()
+        fighterOneCount = len(list_of_fights)
+        fighterTwoCount = len(list_of_fights)
+        print(list_of_fights)
 
         for fight in list_of_fights:
             time.sleep(1)
@@ -210,7 +229,7 @@ class statsSpider(scrapy.Spider):
             #print(fight.get('fighterTwo'))
             fighterOneFirstName.append(fight.get('fighterOne').split()[0])
             fighterOneLastName = fight.get('fighterOne').split()[1]
-            print("MAKING CALL FOR: " + fighterOneFirstName[len(fighterOneFirstName) - 1] + " " + fighterOneLastName)
+            #print("MAKING CALL FOR: " + fighterOneFirstName[len(fighterOneFirstName) - 1] + " " + fighterOneLastName)
             yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=my_callback_one, endpoint="execute", args={
                 'lua_source': self.firstStatScript,
                 'lastName': fighterOneLastName,
@@ -219,7 +238,7 @@ class statsSpider(scrapy.Spider):
 
             fighterTwoFirstName.append(fight.get('fighterTwo').split()[0])
             fighterTwoLastName = fight.get('fighterTwo').split()[1]
-            print("MAKING CALL FOR: " + fighterTwoFirstName[len(fighterTwoFirstName) - 1] + " " + fighterTwoLastName)
+            #print("MAKING CALL FOR: " + fighterTwoFirstName[len(fighterTwoFirstName) - 1] + " " + fighterTwoLastName)
             yield SplashRequest(url="http://ufcstats.com/statistics/fighters", callback=my_callback_two, endpoint="execute", args={
                 'lua_source': self.firstStatScript,
                 'lastName': fighterTwoLastName,
@@ -243,27 +262,27 @@ class statsSpider(scrapy.Spider):
         '''
 
     def retrieve_fighter_page(self, response, firstName):
-        print("-------------------------------------------")
-        print("Retrieving Page For: " + firstName)
-        print("URL: " + response.url)
+        #print("-------------------------------------------")
+        #print("Retrieving Page For: " + firstName)
+        #print("URL: " + response.url)
         table = response.xpath("//table[@class='b-statistics__table']/tbody/tr")
         lastName = response.xpath("//table[@class='b-statistics__table']/tbody/tr[2]/td[2]/a/text()").get()
         count = 0
         for row in table:
             fighterName = row.xpath(".//td/a/text()").get()
-            print(fighterName)
+            #print(fighterName)
             #self.fakeLastName = fighterName
             if(fighterName==firstName):
                 link = row.xpath(".//td/a/@href").get()
-                print("URL TO HIT: " + link)
-                print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+                #print("URL TO HIT: " + link)
+                #print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
                 count += 1
                 #return
                 yield SplashRequest(url=link, callback=self.retrieve_fighter_stats, endpoint="execute", args={
                     'lua_source': self.defaultScript,
                     'user-agent': self.user_agent
                 })
-            print("^^^^^NOT HIM")
+            #print("^^^^^NOT HIM")
         if count == 0:
             name = firstName + " " + lastName
             replacement = {
@@ -271,8 +290,8 @@ class statsSpider(scrapy.Spider):
                 'Status': "NOT_FOUND"
             }
             yield replacement
-            print("NOTHING WAS FOUND")
-            print("###############################")
+            #print("NOTHING WAS FOUND")
+            #print("###############################")
         '''
         yield SplashRequest(url="http://ufcstats.com/fighter-details/82a5152216251682", callback=self.retrieve_fighter_stats, endpoint="execute", args={
                     'lua_source': self.defaultScript,

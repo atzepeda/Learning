@@ -1,0 +1,1697 @@
+<!DOCTYPE html><html version="XHTML+RDFa 1.0"><head><script async="" data-jsonpid="" src="https://cdn-gl.imrworldwide.com/novms/js/2/nlsSDK600.bundle.min.js"></script><script async="" src="https://cdn-gl.imrworldwide.com/conf/config250.js#name=v60Bsdk__1609979392046&amp;ns=NOLBUNDLE"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<title>Sherdog.com: UFC, Mixed Martial Arts (MMA) News, Results, Fighting</title><meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en-US">
+<meta name="author" content="Sherdog.com">
+<meta name="publisher" content="Sherdog.com">
+<meta name="copyright" content="2021 - Sherdog.com">
+<meta name="robots" content="index, follow">
+<meta name="description" content="The industry pioneer in UFC, Bellator and all things MMA (aka Ultimate Fighting). MMA news, interviews, pictures, videos and more since 1997."><meta property="fb:admins" content="100000399936875"><meta property="og:description" content="The industry pioneer in UFC, Bellator and all things MMA (aka Ultimate Fighting). MMA news, interviews, pictures, videos and more since 1997."><meta property="og:title" content="Sherdog.com: UFC, Mixed Martial Arts (MMA) News, Results, Fighting"><meta property="og:image" content="https://www2-cdn.sherdog.com/2799/apple-touch-icon.png"><meta property="og:url" content="//www.sherdog.com/stats/fightfinder?SearchTxt=UFC+on+ABC%3A+Holloway+vs.+Kattar"><meta property="og:site_name" content="Sherdog"><meta property="og:type" content="website"><link href="/minify/?t=c&amp;f=/css/font-awesome.min.css,/css/w/sherdog_styles.css,/css/w/lightbox_springboard.css,/ngallery/css.css,/css/jcarousel.css,/css/meme_generator.css&amp;v=2799" media="screen" rel="stylesheet" type="text/css">
+<link href="https://www2-cdn.sherdog.com/2799/favicon.ico" rel="icon">
+<link href="https://www2-cdn.sherdog.com/2799/favicon.ico" rel="shortcut icon">
+<link href="https://www2-cdn.sherdog.com/2799/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="//m.sherdog.com/stats/fightfinder" media="handheld" rel="alternate">
+<link href="//m.sherdog.com/stats/fightfinder" media="only screen and (max-width: 640px)" rel="alternate">
+<link href="https://plus.google.com/107042724082110303692/" rel="author"><link rel="preload" href="//rumcdn.geoedge.be/2a236ed9-fb8c-429e-ab47-cacac34a3be6/grumi.js"><script id="twitter-wjs" src="https://platform.twitter.com/widgets.js"></script><script src="https://connect.facebook.net/en_US/all.js?hash=55ea64e95d076978845df9ee5e09650d" async="" crossorigin="anonymous"></script><script async="" src="https://ubiquitousyard.com/v2/0/xqamzRPEfM97qgzwchjR7RcoNxFY_EPPyxrZhsMQCjzDCnqRk0_pp9D63w6p1GelYOiPg"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script id="facebook-jssdk" src="//connect.facebook.net/en_US/all.js#xfbml=1"></script><script type="text/javascript" src="https://www1-cdn.sherdog.com/2799/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="//cdn.springboardplatform.com/storage/js/social_widget/sw.js"></script>
+<script type="text/javascript" src="/minify/?t=j&amp;f=/js/w/global.js,/js/w/sticky.js,/js/w/geolocation.js,/js/w/handlebars.js,/ngallery/script.js,/js/w/js-nivoslider.js,/js/jquery.nivo.slider.js,/js/w/all_access_coverpanel.js,/js/executeRadio.js,/js/jquery.jplayer.min.js,/js/w/lightbox_springboard.js,/js/jquery.carouFredSel-5.5.0.js,/js/meme_generator.js,/js/fight_odds.js&amp;v=2799"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+<script type="text/javascript">
+    //<!--
+
+					$(function() {
+						$('#SearchTxt').change(function () {
+							$('#SearchTxt').val($(this).val());
+						});
+						$('select#weight').change(function(){
+							$('input#weight').val($(this).val());
+						});
+					});    //-->
+</script>
+<script type="text/javascript">
+    //<!--
+(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));    //-->
+</script>
+    <!-- BEGIN INSTARTLOGIC/ANALYTICS SCRIPT -->
+    <script src="//www.volantix.com/check.js" async=""></script>
+    <script>
+
+    var GAManager = {
+        _accounts: [],
+        // initialize all trackers
+        init: function (accounts) {
+            this._accounts = accounts;
+            this._accounts.forEach(function(item, index){
+                ga("create", item, {"name": "tracker" + index}, "auto");
+            });
+        },
+        // replacement for Googles ga send function
+        ga: function() {
+            var passedArgs = Array.prototype.slice.call(arguments);
+            if (/send|set|require/.test(passedArgs[0])) {
+                this._accounts.forEach(function(item, index){
+                    var args = passedArgs.slice();
+                    args[0] = "tracker" + index + "." + args[0];
+                    //console.log("xxx analytics", args);
+                    ga.apply(null, args);
+                });
+            }
+        }
+    };
+
+    if (window.I11C && window.I11C.RegisterAbdCallback) {
+        window.I11C.RegisterAbdCallback(function() {
+            window.adsBlocked = true;
+            var scr1 = document.createElement("script");
+            var scr2 = document.createElement("script");
+            scr1.src = "//doc.osesame.net/advertisement.js";
+            document.head.appendChild(scr1);
+            scr2.innerHTML = "" +
+                "(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){\n" +
+                "(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n" +
+                "m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n" +
+                "})(window,document,'script','//www.google-analytics.com/analytics.js','ga');\n" +
+                "ga('provide', 'instabi', function(tracker, opts) {\n" +
+                    "tracker.set('dimension' + opts.dimensionIndex, I11C && !!I11C.Morph);\n" +
+                    "tracker.set('dimension' + (opts.dimensionIndex + 1), windows.adsBlocked);\n" +
+                "})";
+            document.head.appendChild(scr2);
+            //ga("create", "UA-94323-27", "auto");
+            GAManager.init(["UA-94323-27"]);
+            GAManager.ga("require", "instabi", {dimensionIndex: 5});
+            GAManager.ga('set', 'dimension1', 'Stats');
+
+            GAManager.ga("send", "pageview");
+
+            if (typeof(window.I11C) !== "undefined" && window.I11C.Morph == 1) {
+                GAManager.ga("send", "event", {
+                    eventCategory: "instartLogic",
+                    eventAction: "true",
+                    transport: "beacon"
+                });
+            }
+            return true;
+        });
+    } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,"script","https://www.google-analytics.com/analytics.js","ga");
+
+        ga("provide", "instabi", function(tracker, opts) {
+            var ad = document.createElement("ins");
+            ad.className = "AdSense";
+            ad.style.display = "block";
+            ad.style.position = "absolute";
+            ad.style.top = "-1px";
+            ad.style.height = "1px";
+            document.body.appendChild(ad);
+            tracker.set("dimension" + opts.dimensionIndex, !ad.clientHeight);
+            tracker.set("dimension4", typeof I10C != "undefined" && I10C && !!I10C.Morph);
+            document.body.removeChild(ad);
+        });
+
+        //ga("create", "UA-94323-27", "auto");
+        GAManager.init(["UA-94323-27"]);
+        GAManager.ga("require", "instabi", {dimensionIndex: 5});
+        GAManager.ga('set', 'dimension1', 'Stats');
+
+        GAManager.ga("send", "pageview");
+    }
+    </script>
+    <!-- END INSTARTLOGIC/ANALYTICS SCRIPT -->
+
+    <!-- BEGIN SESSION LENGTH TEST -->
+    <script type="text/javascript">
+    var winLoadedAt = new Date().getTime();
+    window.addEventListener('unload', function(event) {
+        var cTime = new Date().getTime();
+        var eValue = Math.round((cTime-winLoadedAt)/1000);
+        if (eValue >= 30) { eValue = '30+'; } else if (eValue < 10) { eValue = '0' + eValue; }
+        console.log('Pageview Duration: ' + eValue);
+        if (typeof(ga) != 'undefined') {
+            GAManager.ga('send', 'event', 'Pageview Duration', eValue, {transport: 'beacon'});
+        }
+    }, false);
+    </script>
+    <!-- END SESSION LENGTH TEST -->
+
+    <script type="text/javascript">!(function(o,n,t){t=o.createElement(n),o=o.getElementsByTagName(n)[0],t.async=1,t.src="https://ubiquitousyard.com/v2/0/xqamzRPEfM97qgzwchjR7RcoNxFY_EPPyxrZhsMQCjzDCnqRk0_pp9D63w6p1GelYOiPg",o.parentNode.insertBefore(t,o)})(document,"script"),(function(o,n){o[n]=o[n]||function(){(o[n].q=o[n].q||[]).push(arguments)}})(window,"admiral");!(function(n,e,r,t){function o(){if((function o(t){try{return(t=localStorage.getItem("v4ac1eiZr0"))&&0<t.split(",")[4]}catch(n){}return!1})()){var t=n[e].pubads();typeof t.setTargeting===r&&t.setTargeting("admiral-engaged","true")}}(t=n[e]=n[e]||{}).cmd=t.cmd||[],typeof t.pubads===r?o():typeof t.cmd.unshift===r?t.cmd.unshift(o):t.cmd.push(o)})(window,"googletag","function");;;;;</script>    
+<script>
+ window.grumi = {
+	cfg: {
+	 advs: {
+		'19434501': true,
+		'34701261': true,
+		'1121182821': true,
+		'255472461': true,
+		'18981741': true,
+		'1210966341': true,
+		'394910421': true,
+	},
+	pubIds: {
+		'': true
+	}
+	},
+ key: '2a236ed9-fb8c-429e-ab47-cacac34a3be6'
+};
+</script>
+<script src="//rumcdn.geoedge.be/grumi-ip.js"></script>
+    
+<!-- BEGIN PREBID/GPT -->
+<script type="text/javascript">
+
+var PREBID_TIMEOUT = 2500;
+
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+googletag.cmd.push(function() {
+  googletag.pubads().disableInitialLoad();
+});
+
+var noPrebid = false;
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+
+var adUnits = [
+{
+  code: 'ad728',
+  mediaTypes: {
+    banner: { sizes: [[728, 90], [970, 90]] }
+  },
+  bids: [{
+    bidder: 'appnexus',
+    params: {
+      placementId: '11079634'
+    }
+  },
+  {
+    bidder: 'rubicon',
+    params: {
+      accountId: '9366',
+      siteId: '16808',
+      zoneId: '448918'
+    }
+  },
+  {
+    bidder: 'ix',
+    params: {
+      siteId: '185563',
+      size: [728, 90]
+    }
+  },
+  {
+    bidder: 'aol',
+    params: {
+      placement: '3993576',
+      network: '9485.1',
+      alias: '3993576'
+    }
+  }]
+}
+,
+{
+  code: 'ad728ng',
+  mediaTypes: {
+    banner: { sizes: [[728, 90]] }
+  },
+  bids: [{
+    bidder: 'rubicon',
+    params: {
+      accountId: '9366',
+      siteId: '16808',
+      zoneId: '448920'
+    }
+  },
+  {
+    bidder: 'ix',
+    params: {
+      siteId: '185565',
+      size: [728, 90]
+    }
+  }]
+}
+,
+{
+  code: 'ad300',
+  mediaTypes: {
+    banner: { sizes: [[300, 250], [300, 600]] }
+  },
+  bids: [{
+    bidder: 'appnexus',
+    params: {
+      placementId: '11079631'
+    }
+  },
+  {
+    bidder: 'rubicon',
+    params: {
+      accountId: '9366',
+      siteId: '16808',
+      zoneId: '448918'
+    }
+  },
+  {
+    bidder: 'ix',
+    params: {
+      siteId: '185564',
+      size: [300, 250]
+    }
+  },
+  {
+    bidder: 'aol',
+    params: {
+      placement: '3993578',
+      network: '9485.1',
+      alias: '3993578'
+    }
+  }]
+}
+,
+{
+  code: 'ad300ng',
+  mediaTypes: {
+    banner: { sizes: [[300, 250]] }
+  },
+  bids: [{
+    bidder: 'appnexus',
+    params: {
+      placementId: '11079638'
+    }
+  },
+  {
+    bidder: 'rubicon',
+    params: {
+      accountId: '9366',
+      siteId: '16808',
+      zoneId: '448920'
+    }
+  },
+  {
+    bidder: 'ix',
+    params: {
+      siteId: '185566',
+      size: [300, 250]
+    }
+  },
+  {
+    bidder: 'aol',
+    params: {
+      placement: '4103426',
+      network: '9485.1',
+      alias: '4103426'
+    }
+  }]
+}
+,
+{
+  code: 'ad300st',
+  mediaTypes: {
+    banner: { sizes: [[300, 250]] }
+  },
+  bids: [{
+    bidder: 'appnexus',
+    params: {
+      placementId: '11079644'
+    }
+  },
+  {
+    bidder: 'rubicon',
+    params: {
+      accountId: '9366',
+      siteId: '16808',
+      zoneId: '448922'
+    }
+  },
+  {
+    bidder: 'ix',
+    params: {
+      siteId: '185567',
+      size: [300, 250]
+    }
+  },
+  {
+    bidder: 'aol',
+    params: {
+      placement: '4103427',
+      network: '9485.1',
+      alias: '4103427'
+    }
+  }]
+}
+,
+{
+  code: 'ad320',
+  mediaTypes: {
+    banner: { sizes: [[300, 50], [320, 50], [320, 100], [320, 150]] }
+  },
+  bids: [{
+    bidder: 'appnexus',
+    params: {
+      placementId: '11079639'
+    }
+  },
+  {
+    bidder: 'rubicon',
+    params: {
+      accountId: '9366',
+      siteId: '16808',
+      zoneId: '448918'
+    }
+  },
+  {
+    bidder: 'ix',
+    params: {
+      siteId: '185568',
+      size: [320, 50]
+    }
+  },
+  {
+    bidder: 'aol',
+    params: {
+      placement: '4774862',
+      network: '9485.1',
+      alias: '4774862'
+    }
+  },
+  {
+    bidder: 'criteo',
+    params: {
+      zoneId: '740628'
+    }
+  }]
+}
+];
+
+var validAdUnits = ['ad728', 'ad728ng', 'ad300', 'ad300in', 'ad300ng', 'ad300st'];
+var adUnitsExists = [];
+for (var i in adUnits) {
+    if (validAdUnits.indexOf(adUnits[i].code) >= 0) {
+        adUnitsExists.push(adUnits[i]);
+    }
+}
+adUnits = adUnitsExists;
+
+function fetchHeaderBids(forceRefresh = false) {
+
+    function allBiddersBack() {
+        var bidders = ['prebid'];
+        var allBiddersBack =
+            bidders.map(function(bidder) {
+                return biddersBack[bidder];
+            })
+            .filter(function(bool) {
+                return bool;
+            })
+            .length === bidders.length;
+        return allBiddersBack;
+    }
+
+    function headerBidderBack(bidder) {
+        if (biddersBack.adserverRequestSent === true) {
+            return;
+        }
+        if (bidder === 'prebid') {
+            biddersBack.prebid = true;
+        }
+        if (allBiddersBack()) {
+            sendAdserverRequest();
+        }
+    }
+
+    function sendAdserverRequest() {                                        // called when prebid bids are back (replacment for prebids initAdServer)
+        if (biddersBack.adserverRequestSent === true) {
+            return;
+        }
+        biddersBack.adserverRequestSent = true;
+
+        googletag.cmd.push(function() {
+            pbjs.que.push(function() {
+                pbjs.setTargetingForGPTAsync();
+
+                if (forceRefresh) {
+                    googletag.pubads().refresh();
+                }
+
+                var adsPresent = [];
+                $.each(gptAds, function (key, value) {
+                    if ($('div.gpt-ad:not(.js-inview)[data-id="' + key + '"]').length) {
+                        adsPresent.push(value);
+                        // this line is needed for the refresh method to work correctly
+                        googletag.display(key);
+                    }
+                });
+
+                googletag.pubads().refresh(adsPresent);
+            });
+        });
+    };
+
+
+    var biddersBack = {
+        prebid: false,
+        adserverRequestSent: false
+    };
+
+    // Request bids from Prebid
+    if (noPrebid === true) {
+      headerBidderBack('prebid');
+    } else {
+      pbjs.requestBids({
+          bidsBackHandler: function(bidResponses) {
+              var targetingParams = pbjs.getAdserverTargeting();
+              headerBidderBack('prebid');                                         // here we had initAdserver();
+          }
+      });
+    }
+
+    // Set timeout function
+    setTimeout(function() {
+        sendAdserverRequest();
+    }, PREBID_TIMEOUT);
+
+}
+
+function refreshBids() {
+    fetchHeaderBids(true);
+};
+</script>
+<script type="text/javascript">
+
+if (adUnits.length > 0) {
+
+    pbjs.que.push(function() {
+        pbjs.addAdUnits(adUnits);
+        pbjs.bidderSettings = {
+            standard: {adserverTargeting: [
+                {key: 'hb_bidder', val: function(bidResponse) {return bidResponse.bidderCode;}},
+                {key: 'hb_adid', val: function(bidResponse) {return bidResponse.adId;}},
+                {key: 'hb_pb', val: function(bidResponse) { var cpm = bidResponse.cpm;if (cpm <= 1.00) {return (Math.floor(cpm * 20) / 20).toFixed(2);} else if (cpm <= 5.00) {return (Math.floor(cpm * 10) / 10).toFixed(2);} else if (cpm <= 20.00) {return (Math.floor(cpm * 2) / 2).toFixed(2);} else {return '20.00';}}},
+                {key: 'hb_size', val: function(bidResponse) {return bidResponse.size;}}
+            ]}
+        };
+
+    fetchHeaderBids();
+    });
+
+} else {
+    fetchHeaderBids(false);
+}
+</script><script type="text/javascript" src="https://www.googletagservices.com/tag/js/gpt.js" async=""></script>
+<script type="text/javascript">
+
+var gptAds = gptAds || {};
+
+googletag.cmd.push(function() {
+
+console.log('[GPT DEBUG] googletag.cmd.push');
+
+if (!(typeof(window.I11C) !== 'undefined' && window.I11C.Morph == 1)) {
+gptAds['adoop']    = googletag.defineOutOfPageSlot('/4403/cr/sherdog/fightfinder', 'adoop').addService(googletag.pubads());
+} else {
+googletag.pubads().setTargeting('instartLogic', '1');
+}
+
+gptAds['ad728']    = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[728,90], [970,90], [970,250]], 'ad728').addService(googletag.pubads()).setTargeting('pos', 'a');
+gptAds['ad300']    = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[300,250], [300,600], [160,600]], 'ad300').addService(googletag.pubads()).setTargeting('pos', 'a').setTargeting('kw', 'rightrail');
+gptAds['ad728ng']  = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[728,90]], 'ad728ng').addService(googletag.pubads()).setTargeting('pos', 'a').setTargeting('kw', 'slideshow,slideshow-fullscreen,slideshow-lb');
+gptAds['ad300ng']  = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[300,250]], 'ad300ng').addService(googletag.pubads()).setTargeting('pos', 's').setTargeting('kw', 'slideshow');
+gptAds['ad300in']  = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[300,250]], 'ad300in').addService(googletag.pubads()).setTargeting('pos', 'p').setTargeting('ntvPlacement', '1111176').setTargeting('kw', 'in-article');
+gptAds['ad300st']  = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[300,250]], 'ad300st').addService(googletag.pubads()).setTargeting('pos', 'b').setTargeting('kw', 'rightrail');
+gptAds['ad300601'] = googletag.defineSlot('/4403/cr/sherdog/fightfinder', [[300,601], [300,250]], 'ad300601').addService(googletag.pubads()).setTargeting('pos', 'i').setTargeting('kw', 'insticator');
+googletag.pubads().setTargeting('ct', 'fightfinder').setTargeting('site', 'sherdog');
+googletag.pubads().enableSingleRequest();
+googletag.pubads().disableInitialLoad();
+googletag.pubads().collapseEmptyDivs(true);
+googletag.enableServices();
+
+});
+</script>
+<script type="text/javascript" src="https://secureassets.evolvemediallc.com/prebid/prebid_4_15_0_custom_110920200943.js" async=""></script><!-- END PREBID/GPT -->
+    <!-- BEGIN SB INGAGE TARGETING HEADER -->
+<script type="text/javascript">
+var sbIngageTargeting = {
+    custom_params: [
+        { site : 'sherdog' },
+        { ct : 'fightfinder' },
+    ],
+    zone : 'fightfinder'
+}
+</script>
+<!-- END SB INGAGE TARGETING -->
+    <script type="text/javascript">
+    (function () {
+        window.siqConfig = {
+            engineKey: "e24fe983e6ac3a447328bbd9a8dd6797",
+            forceLoadSettings: false        // change false to true if search box on your site is adding dynamically
+        };
+        window.siqConfig.baseUrl = "//pub.searchiq.co/";
+        var script = document.createElement("SCRIPT");
+        script.src = window.siqConfig.baseUrl + '/js/container/siq-container-2.js?cb=' + (Math.floor(Math.random()*999999)) + '&engineKey=' + siqConfig.engineKey;
+        script.id = "siq-container";
+        document.getElementsByTagName("HEAD")[0].appendChild(script);
+    })();
+</script><script src="//pub.searchiq.co//js/container/siq-container-2.js?cb=181974&amp;engineKey=e24fe983e6ac3a447328bbd9a8dd6797" id="siq-container"></script>
+    <script type="text/javascript">
+        var isPlayByPlay = false;
+    </script>
+
+    <link rel="preconnect" href="https://ad.doubleclick.net"><link rel="preconnect" href="https://tpc.googlesyndication.com"><meta http-equiv="origin-trial" content="A2shzsdPO+RKe83bUqT9oVkYwGZN6j9O7nrcOASNFPuQz8HefgVYb9qAqn6coNCSDIRtXoi6ybCrjEsYh3caFgIAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MTM0OTU4NjgsImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/gpt/pubads_impl_2020120801.js" async=""></script><script src="//api.searchiq.co/api/searchEngines/e24fe983e6ac3a447328bbd9a8dd6797/settings?callback=SIQ_settings_loaded"></script><script src="//static.searchiq.co/js/2.2.57/sa.js"></script><script src="//static.searchiq.co/js/2.2.57/autocomplete.js"></script><script type="text/javascript">!function(){window.f2s_partnerSync=function(e){var n;e&&e.uuid&&(n="//idsync.rlcdn.com/708796.gif?partner_uid="+e.uuid,document.createElement("IMG").src=n)};var e,n,r,t=SiqConfig.siqSid,c=location.href.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase().replace("www.",""),i=siqConfig.engineKey,a=location.href,o=document.referrer;e="//track.searchiq.co/api/tr?callback=f2s_partnerSync&event=impression&eventInfo="+encodeURIComponent('{"sid":"'+t+'","said":"'+c+'","src": "sqcont","engineKey":"'+i+'","source_url":"'+a+'"'+(o?',"external_referrer":"'+o+'"':"")+"}"),n=document.getElementsByTagName("head")[0],(r=document.createElement("script")).type="text/javascript",r.src=e,n.appendChild(r)}();</script><script type="text/javascript" src="//track.searchiq.co/api/tr?callback=f2s_partnerSync&amp;event=impression&amp;eventInfo=%7B%22sid%22%3A%2211167975%22%2C%22said%22%3A%22sherdog.com%22%2C%22src%22%3A%20%22sqcont%22%2C%22engineKey%22%3A%22e24fe983e6ac3a447328bbd9a8dd6797%22%2C%22source_url%22%3A%22https%3A%2F%2Fwww.sherdog.com%2Fstats%2Ffightfinder%3FSearchTxt%3DUFC%2Bon%2BABC%253A%2BHolloway%2Bvs.%2BKattar%22%2C%22external_referrer%22%3A%22https%3A%2F%2Fwww.sherdog.com%2F%22%7D"></script><script type="text/javascript">!function(){window.f2PubConfig={id:"65"},f2PubConfig.cb=Math.floor(1e9*Math.random()),f2PubConfig.baseUrl="//static.nextpathnet.com";var n=document.createElement("script");n.type="text/javascript",n.id="pub-js";var e=f2PubConfig.baseUrl+"/pub.js?";for(var t in window.f2PubConfig)e+=t+"="+window.f2PubConfig[t]+"&";n.src=e,document.getElementsByTagName("head")[0].appendChild(n)}();</script><script type="text/javascript" id="pub-js" src="//static.nextpathnet.com/pub.js?id=65&amp;cb=606485848&amp;baseUrl=//static.nextpathnet.com&amp;"></script><script type="text/javascript">!function($){var fbViewLog=function(eventName,eventData,callback){if(!eventData){return log("Event data is corrupted")}var url="https://www.facebook.com/tr/?id=649690295426340"+"&ev="+encodeURIComponent(eventName);var data={sid:eventData.sid,said:eventData.said,engineKey:eventData.engineKey};for(var key in data){if(data.hasOwnProperty(key)){url+="&cd["+encodeURIComponent(key)+"]="+encodeURIComponent(data[key])}}var img=new Image;img.onerror=img.onload=callback;img.src=url};var pinViewLog=function(eventName,eventData,callback){if(!eventData){return log("Event data is corrupted")}var url="https://ct.pinterest.com/v3/?tid=2612465858884"+"&event="+encodeURIComponent(eventName);var data={sid:eventData.sid,said:eventData.said,engineKey:eventData.engineKey};for(var key in data){if(data.hasOwnProperty(key)){url+="&ed["+encodeURIComponent(key)+"]="+encodeURIComponent(data[key])}}var img=new Image;img.onerror=img.onload=callback;img.src=url};var said=location.href.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase().replace("www.","");var eventData={sid:SiqConfig.siqSid,said:said,engineKey:siqConfig.engineKey};fbViewLog("pageView",eventData);pinViewLog("pagevisit",eventData)}(window.siq_S);</script><script type="text/javascript">(function(){var said=location.href.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase();var fbLog=function(eventName,eventData,callback){if(!eventData){return log("Event data is corrupted")}if(eventName.toLowerCase()==="search"){eventName="Search"}var url="https://www.facebook.com/tr/?id=649690295426340"+"&ev="+encodeURIComponent(eventName);if(eventName==="Search"){url+="&cd[search_string]="+encodeURIComponent(eventData.kw)}var data={sid:eventData.sid,said:eventData.said.replace("www.",""),kw:eventData.kw,engineKey:eventData.engineKey};for(var key in data){if(data.hasOwnProperty(key)){url+="&cd["+encodeURIComponent(key)+"]="+encodeURIComponent(data[key])}}var img=new Image;img.onerror=img.onload=callback;img.src=url};var pinLog=function(eventName,eventData,callback){if(!eventData){return log("Event data is corrupted")}if(eventName.toLowerCase()==="search"){eventName="search"}var url="https://ct.pinterest.com/v3/?tid=2612465858884"+"&event="+encodeURIComponent(eventName);if(eventName==="search"){url+="&ed[search_query]="+encodeURIComponent(eventData.kw)}var data={sid:eventData.sid,said:eventData.said.replace("www.",""),kw:eventData.kw,engineKey:eventData.engineKey};for(var key in data){if(data.hasOwnProperty(key)){url+="&ed["+encodeURIComponent(key)+"]="+encodeURIComponent(data[key])}}var img=new Image;img.onerror=img.onload=callback;img.src=url};var firePixels=function(eventName,eventData,callback){fbLog(eventName,eventData,callback);pinLog(eventName,eventData,callback)};var getSearchData=function(){var autocomplete=window.siq_S(".holdResults");if(autocomplete.length===0){return}var classes=autocomplete.attr("class").split(" ");var index=-1;for(var i=0;i<classes.length;i++){var clazz=classes[i].trim();if(/^siq_searchIndexResult-\d+$/.test(clazz)){index=clazz.replace(/^siq_searchIndexResult-(\d+)$/,"$1")}}if(index<0){return}var input=window.siq_S(".siq_searchIndex-"+index);return{kw:input.val(),sid:SiqConfig.siqSid,said:said,engineKey:siqConfig.engineKey}};var getMobileSearchData=function(el){var input=window.siq_S(el).parents("#siq_mobile").find(".siq_searchwrap input.siq_searchfield");return{kw:input.val(),sid:SiqConfig.siqSid,said:said,engineKey:siqConfig.engineKey}};var bindEventListeners=function(){window.siq_S(document).on("click",".holdResults .searchWrapperLabel, .holdResults ul li .resultsMore",function(){firePixels("Search",getSearchData())});window.siq_S(document).on("click",".siq-autocomplete a",function(){if(!window.siq_S(this).hasClass("siq-recommended-link")&&window.siq_S(this).parents(".siq-recommended-link").length===0){firePixels("Search",getSearchData())}});window.siq_S(document).on("submit","form.siq_searchForm",function(){firePixels("Search",getSearchData())});window.siq_S(document).on("keydown",function(e){e=e||window.event;switch(e.which||e.keyCode){case 13:if(window.siq_S(".holdResults").length>0&&window.siq_S(".holdResults .siq-autocomplete.highlighted").length>0){firePixels("Search",getSearchData())}else if(window.siq_S(e.target).is("#siq_ajax_search")||window.siq_S(e.target).parents("form").is("#siq_search_results div.siq_search_ajax.siq_search_box form")){firePixels("Search",getSearchData())}break}});window.siq_S(document).on("click touch",".siq_aclinewrap",function(){firePixels("Search",getMobileSearchData(this))});if(document.referrer&&document.referrer.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase()!==said){var searchPageUrl=SiqConfig.resultPageUrl.replace(/^https?:/,"").replace(/\?.*$/,"");var currentPageUrl=location.href.replace(/^https?:/,"").replace(/\?.*$/,"");if(searchPageUrl!==currentPageUrl){return}var getParamFromURL=function(url,param){if(url.indexOf("?")<0){return undefined}var query=url.substr(url.indexOf("?")+1);if(query.length===0){return undefined}var paramValsPairs=query.split("&");for(var i=0;i<paramValsPairs.length;i++){var pair=paramValsPairs[i];if(pair.indexOf("=")<0&&decodeURIComponent(pair)===param){return true}else{var name=decodeURIComponent(pair.substr(0,pair.indexOf("=")));if(param===name){return decodeURIComponent(pair.substr(pair.indexOf("=")+1))}}}return undefined};var keyword=getParamFromURL(location.href,SiqConfig.queryParameter)||getParamFromURL(location.href,SiqConfig.searchBoxName);eventData={kw:keyword,sid:SiqConfig.siqSid,said:said,engineKey:siqConfig.engineKey,refURL:document.referrer};firePixels("Search",eventData)}};var init=function(){SiqContainer.waitAndRun(function(){return!!window.siq_S},bindEventListeners,1e3,20*1e3)};init()})();</script><script type="text/javascript">!function(s){var o,a,n,r;void 0!==s&&(o=location.href.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase(),a=location.href,n=function(e,i,n){var r,t,s;i&&((r=new Image).onerror=r.onload=n,t=null!=i.kw?i.kw.replace(/\"/g,""):i.kw,s='{"sid":"'+i.sid+'","said":"'+i.said.replace("www.","")+'","kw":"'+t+'","source_url":"'+a+'","engineKey":"'+i.engineKey+'"'+(i.refURL?',"external_referrer":"'+i.refURL+'"':"")+"}",r.src="//track.searchiq.co/api/tr?event="+encodeURIComponent("search")+"&eventInfo="+encodeURIComponent(s))},r=function(){var e=s(".holdResults");if(0!==e.length){for(var i=e.attr("class").split(" "),n=-1,r=0;r<i.length;r++){var t=i[r].trim();/^siq_searchIndexResult-\d+$/.test(t)&&(n=t.replace(/^siq_searchIndexResult-(\d+)$/,"$1"))}if(!(n<0))return{kw:s(".siq_searchIndex-"+n).val(),sid:SiqConfig.siqSid,said:o,engineKey:siqConfig.engineKey}}},function(){if(s(document).on("click",".holdResults .searchWrapperLabel, .holdResults ul li .resultsMore",function(){n(0,r())}),s(document).on("click",".siq-autocomplete a",function(){s(this).hasClass("siq-recommended-link")||0!==s(this).parents(".siq-recommended-link").length||n(0,r())}),s(document).on("submit","form.siq_searchForm",function(){n(0,r())}),s(document).on("keydown",function(e){switch((e=e||window.event).which||e.keyCode){case 13:(0<s(".holdResults").length&&0<s(".holdResults .siq-autocomplete.highlighted").length||s(e.target).is("#siq_ajax_search")||s(e.target).parents("form").is("#siq_search_results div.siq_search_ajax.siq_search_box form"))&&n(0,r())}}),s(document).on("click touch",".siq_aclinewrap",function(){n(0,{kw:s(this).parents("#siq_mobile").find(".siq_searchwrap input.siq_searchfield").val(),sid:SiqConfig.siqSid,said:o,engineKey:siqConfig.engineKey})}),document.referrer&&document.referrer.replace(/^https?:\/\/([^\/]+).*$/i,"$1").toLowerCase()!==o){if(SiqConfig.resultPageUrl.replace(/^https?:/,"").replace(/\?.*$/,"")!==location.href.replace(/^https?:/,"").replace(/\?.*$/,""))return;function e(e,i){if(!(e.indexOf("?")<0)){var n=e.substr(e.indexOf("?")+1);if(0!==n.length)for(var r=n.split("&"),t=0;t<r.length;t++){var s=r[t];if(s.indexOf("=")<0&&decodeURIComponent(s)===i)return!0;if(i===decodeURIComponent(s.substr(0,s.indexOf("="))))return decodeURIComponent(s.substr(s.indexOf("=")+1))}}}var i=e(location.href,SiqConfig.queryParameter)||e(location.href,SiqConfig.searchBoxName);eventData={kw:i,sid:SiqConfig.siqSid,said:o,engineKey:siqConfig.engineKey,refURL:document.referrer},n(0,eventData)}}())}(window.siq_S);</script><script type="text/javascript">!function(){
+ var img=new Image();
+ img.src="//api.searchiq.co/live?engineKey="+window.siqConfig.engineKey;
+}();</script><style type="text/css" data-fbcssmodules="css:fb.css.basecss:fb.css.dialog css:fb.css.iframewidget">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script src="//static.nextpathnet.com/container-pubs-common.js?cb=606485848&amp;id=65"></script><link href="//static.searchiq.co/css/2.2.57/autocomplete.css" rel="stylesheet" id="siq_autocomplete_remote_css"><link href="//api.searchiq.co/api/css/e24fe983e6ac3a447328bbd9a8dd6797/custom.css?v=2.2.57&amp;cb=7133044" rel="stylesheet" id="siq_custom_css"><script src="//ad.doubleclick.net/ddm/adj/Ajoqz/Attt"></script></head>
+<body><iframe src="https://secure-au.imrworldwide.com/storageframe.html" id="LOCSTORAGE" scrolling="no" name="empty" hidden="true" style="width: 1px; height: 1px; position: absolute; top: -7px; left: -7px; border: 0px;"></iframe>
+    <div id="adoop" data-id="adoop" class="gpt-ad"></div>    <div class="container">
+        <header>
+            <div id="header">
+                <div id="sherdog">
+                    <a id="sherdog_logo" href="/" title="Sherdog - The Authority in MMA"></a>
+                </div>
+                <div class="event_live" id="event_live"></div>
+                <div class="header_tools">
+                    <form method="get" action="//www.sherdog.com/search.php">
+                        <input name="q" type="text" placeholder="Search Sherdog.com" class="search" autocomplete="off"><input name="Go" type="button" value="Go" class="go">
+                    </form>
+                </div>
+            </div>
+            <!-- Menu -->
+            <nav>
+    <div id="socials">
+        <a target="_blank" href="https://www.youtube.com/user/officialsherdog?sub_confirmation=1" class="yt" title="Sherdog on Youtube"></a>
+        <a target="_blank" href="https://plus.google.com/+sherdog" class="gp" title="Sherdog on G+"></a>
+        <a target="_blank" href="https://twitter.com/sherdogdotcom" class="tw" title="Sherdog on Twitter"></a>
+        <a target="_blank" href="https://www.facebook.com/OfficialSherdog" class="fb" title="Sherdog on Facebook"></a>
+    </div>
+    <div id="navigation">
+                                    <div class="button richnav news">
+                    <a href="/news/news/list" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/list');">
+                        News                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="/news/news/list" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/list');">MMA News <span>»</span></a></li>
+                                                                            <li><a href="https://www.facebook.com/OfficialSherdog" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', 'https://www.facebook.com/OfficialSherdog');">Facebook <span>»</span></a></li>
+                                                                            <li><a href="https://twitter.com/sherdogdotcom" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', 'https://twitter.com/sherdogdotcom');">Twitter <span>»</span></a></li>
+                                                                            <li><a href="https://www.instagram.com/sherdogdotcom/" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', 'https://www.instagram.com/sherdogdotcom/');">Instagram <span>»</span></a></li>
+                                                                            <li><a href="https://www.youtube.com/c/sherdog" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', 'https://www.youtube.com/c/sherdog');">YouTube <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+    <div class="content">
+        <div class="col_three first one">
+    <div class="title_more black">
+        <span class="box">Featured News</span>
+    </div>
+    	<div class="item featured">
+		<a href="/news/news/Jon-Jones-I-Have-No-Intentions-of-Ever-Going-Back-to-Light-Heavyweight-177002" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/Jon-Jones-I-Have-No-Intentions-of-Ever-Going-Back-to-Light-Heavyweight-177002');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/1609453321Jones.jpg" alt="Title">
+			<span class="title">Jon Jones: ‘I Have No Intentions of Ever Going Back to Light...</span>
+		</a>
+	</div>
+</div>
+		<!-- Popular Threads -->
+<div class="col_three first">
+	<div class="title_more black">
+		<span class="box">Popular</span>
+	</div>
+	
+		<div class="item w_thumb">
+		<a href="/news/news/Jan-BlachowiczIsrael-Adesanya-Light-Heavyweight-Title-Bout-Targeted-for-UFC-259-176997" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/Jan-BlachowiczIsrael-Adesanya-Light-Heavyweight-Title-Bout-Targeted-for-UFC-259-176997');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201231030649_20200927052221_GettyImages1276895614.JPG" alt="Title">
+			<span class="title">Jan Blachowicz-Israel Adesanya Light Heavyweight Title Bout
+Targeted...</span>
+		</a>
+    </div>
+	<div class="item w_thumb">
+		<a href="/news/news/Dana-White-on-Positive-Conversation-with-Jon-Jones-Hes-In-a-Much-Better-Place--176995" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/Dana-White-on-Positive-Conversation-with-Jon-Jones-Hes-In-a-Much-Better-Place--176995');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201231014416_20181227062457_IMG_3044.JPG" alt="Title">
+			<span class="title">Dana White on Positive Conversation with Jon Jones: ‘He’s In a...</span>
+		</a>
+    </div>
+	<div class="item w_thumb">
+		<a href="/news/news/Delayed-COVID19-Recovery-Caused-Khamzat-Chimaevs-Exit-from-UFC-on-ESPN-20-176991" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/Delayed-COVID19-Recovery-Caused-Khamzat-Chimaevs-Exit-from-UFC-on-ESPN-20-176991');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201230054314_20200920030455_GettyImages1273564108.JPG" alt="Title">
+			<span class="title">Delayed COVID-19 Recovery Caused Khamzat Chimaev’s Exit from UFC on...</span>
+		</a>
+    </div>
+	<div class="item w_thumb">
+		<a href="/news/news/Positive-COVID19-Test-for-Anthony-Hernandez-Pushes-Rodolfo-Vieira-Match-to-Feb-13-177009" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/news/news/Positive-COVID19-Test-for-Anthony-Hernandez-Pushes-Rodolfo-Vieira-Match-to-Feb-13-177009');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/1609541906Hernandez.jpg" alt="Title">
+			<span class="title">Positive COVID-19 Test for Anthony Hernandez Pushes Rodolfo Vieira...</span>
+		</a>
+    </div>
+</div><!-- Blog Threads -->
+<div class="col_three last">
+    <div class="title_more black">
+        <span class="box">Blogs</span>
+    </div>
+    
+        <div class="item simple_link">
+        <a href="/blog/This-Day-in-MMA-History-Jan-4-177029" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/blog/This-Day-in-MMA-History-Jan-4-177029')">
+            <span class="title">This Day in MMA History: Jan. 4</span>
+        </a>
+    </div>
+    <div class="item simple_link">
+        <a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Jan-3-2021-177022" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Jan-3-2021-177022')">
+            <span class="title">Weekend Boxing Knockouts &amp; Highlights Roundup: Jan. 3, 2021</span>
+        </a>
+    </div>
+    <div class="item simple_link">
+        <a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Dec-27-2020-176952" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Dec-27-2020-176952')">
+            <span class="title">Weekend Boxing Knockouts &amp; Highlights Roundup: Dec. 27, 2020</span>
+        </a>
+    </div>
+    <div class="item simple_link">
+        <a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Dec-20-2020-176864" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Dec-20-2020-176864')">
+            <span class="title">Weekend Boxing Knockouts &amp; Highlights Roundup: Dec. 20, 2020</span>
+        </a>
+    </div>
+    <div class="item simple_link">
+        <a href="/blog/Weekend-Boxing-Knockouts-Roundup-Dec-13-2020-176723" onclick="GAManager.ga('send', 'event', 'RichNav', 'News', '/blog/Weekend-Boxing-Knockouts-Roundup-Dec-13-2020-176723')">
+            <span class="title">Weekend Boxing Knockouts Roundup: Dec. 13, 2020</span>
+        </a>
+    </div>
+</div>		
+    </div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav features">
+                    <a href="/news/articles/list" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', '/news/articles/list');">
+                        Features                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="https://www.sherdog.com/authors/Josh-Gross-1126" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', 'https://www.sherdog.com/authors/Josh-Gross-1126');">Josh Gross <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/authors/Todd-Martin-1404" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', 'http://www.sherdog.com/authors/Todd-Martin-1404');">Todd Martin <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/authors/Eric-Stinton-1551" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', 'http://www.sherdog.com/authors/Eric-Stinton-1551');">Eric Stinton <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/authors/Jacob-Debets-1635" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', 'https://www.sherdog.com/authors/Jacob-Debets-1635');">Jacob Debets <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/authors/Ben-Duffy-1649" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', 'http://www.sherdog.com/authors/Ben-Duffy-1649');">Ben Duffy <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+    <div class="content">
+        <div class="col_three first one">
+    <div class="title_more black">
+        <span class="box">Featured</span>
+    </div>
+    	<div class="item featured">
+		<a href="/news/articles/Sherdogs-2020-YearEnd-Awards-The-Complete-List-177004" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', '/news/articles/Sherdogs-2020-YearEnd-Awards-The-Complete-List-177004');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/20201231114116_GettyImages1204234554_sm.PNG" alt="Title">
+			<span class="title">Sherdog’s 2020 Year-End Awards: The Complete List</span>
+		</a>
+	</div>
+</div>
+		<!-- Popular Threads -->
+<div class="col_three first">
+	<div class="title_more black">
+		<span class="box">Popular</span>
+	</div>
+	
+		<div class="item w_thumb">
+		<a href="/news/articles/Forecasting-UFC-Champions-Class-of-2021-177019" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', '/news/articles/Forecasting-UFC-Champions-Class-of-2021-177019');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20210102063209_GettyImages1290958256.JPG" alt="Title">
+			<span class="title">Forecasting UFC Champions, Class of 2021</span>
+		</a>
+    </div>
+	<div class="item w_thumb">
+		<a href="/news/articles/The-YAMMA-Heavyweight-Title-A-Lineal-History-176979" onclick="GAManager.ga('send', 'event', 'RichNav', 'Features', '/news/articles/The-YAMMA-Heavyweight-Title-A-Lineal-History-176979');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/1609224273YAMMA640-122920.png" alt="Title">
+			<span class="title">The YAMMA Heavyweight Title: A Lineal History</span>
+		</a>
+    </div>
+</div><div class="col_three last">
+    <div class="title_more black">
+        <span class="box">More</span>
+    </div>
+                <div class="item simple_link">
+            <a href="https://www.sherdog.com/authors/Jay-Pettry-1657" onclick="GAManager.ga('send', 'event', 'RichNav', Features', 'https://www.sherdog.com/authors/Jay-Pettry-1657');">
+                <span class="tag">#Jay Pettry Features</span>
+                <span class="title"> </span>
+            </a>
+        </div>
+            <div class="item simple_link">
+            <a href="https://www.sherdog.com/authors/Brian-Knapp-1318" onclick="GAManager.ga('send', 'event', 'RichNav', Features', 'https://www.sherdog.com/authors/Brian-Knapp-1318');">
+                <span class="tag">#Brian Knapp Features</span>
+                <span class="title"> </span>
+            </a>
+        </div>
+            <div class="item simple_link">
+            <a href="https://www.sherdog.com/authors/Marcelo-Alonso-1350" onclick="GAManager.ga('send', 'event', 'RichNav', Features', 'https://www.sherdog.com/authors/Marcelo-Alonso-1350');">
+                <span class="tag">#Marcelo Alonso Features</span>
+                <span class="title"> </span>
+            </a>
+        </div>
+            <div class="item simple_link">
+            <a href="https://www.sherdog.com/authors/Lev-Pisarsky-1712" onclick="GAManager.ga('send', 'event', 'RichNav', Features', 'https://www.sherdog.com/authors/Lev-Pisarsky-1712');">
+                <span class="tag">#Lev Pisarsky Features</span>
+                <span class="title"> </span>
+            </a>
+        </div>
+    </div>		
+    </div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav rankings">
+                    <a href="/news/rankings/list" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/news/rankings/list');">
+                        Rankings                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="https://www.sherdog.com/news/rankings/1/Sherdogs-Official-Mixed-Martial-Arts-Rankings-177042" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', 'http://www.sherdog.com/news/rankings/1/Sherdogs-Official-Mixed-Martial-Arts-Rankings-177042');">Divisional Rankings <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/news/rankings/Sherdogs-PoundforPound-Top-10-Rankings-176779" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', 'https://www.sherdog.com/news/rankings/Sherdogs-PoundforPound-Top-10-Rankings-176779');">Pound-4-Pound  <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/news/rankings/Sherdogs-WMMA-PoundforPound-Top-10-177028" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', 'http://www.sherdog.com/news/rankings/Sherdogs-WMMA-PoundforPound-Top-10-177028');">Women’s Pound-for-Pound <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+	<div class="content">
+		<div class="col_three first one">
+    <div class="title_more black">
+        <span class="box">Latest Featured</span>
+    </div>
+    	<div class="item featured">
+		<a href="/news/rankings/1/Sherdogs-Official-Mixed-Martial-Arts-Rankings-177042" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/news/rankings/1/Sherdogs-Official-Mixed-Martial-Arts-Rankings-177042');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/20210105041750_rankins250010421.PNG" alt="Title">
+			<span class="title">Sherdog’s Official Mixed Martial Arts Rankings</span>
+		</a>
+	</div>
+</div>
+		<div class="col_three two">
+	<div class="title_more black">
+		<span class="box">Rank by weight class</span>
+	</div>
+	<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Stipe-Miocic-39537" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Stipe-Miocic-39537');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601262316686_1601262305Stipe_Miocic.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Heavyweight    		</span>
+    		<span class="title">Stipe Miocic</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Jon-Jones-27944" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Jon-Jones-27944');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601261499839_1601261483Jon_Jones.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Light Heavyweight    		</span>
+    		<span class="title">Jon Jones</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Israel-Adesanya-56374" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Israel-Adesanya-56374');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601262564270_1601262544Israel_Adesanya.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Middleweight    		</span>
+    		<span class="title">Israel Adesanya</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Kamaru-Usman-120691" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Kamaru-Usman-120691');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601263422343_1601263401Kamaru_Usman.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Welterweight    		</span>
+    		<span class="title">Kamaru Usman</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Khabib-Nurmagomedov-56035" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Khabib-Nurmagomedov-56035');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601261661623_1601261638Khabib_Nurmagomedov.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Lightweight    		</span>
+    		<span class="title">Khabib Nurmagomedov</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Alexander-Volkanovski-101527" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Alexander-Volkanovski-101527');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601262814903_1601262803Alexander_Volkanovski.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Featherweight    		</span>
+    		<span class="title">Alexander Volkanovski</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Henry-Cejudo-125297" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Henry-Cejudo-125297');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601261929558_1601261907Henry_Cejudo.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Bantamweight    		</span>
+    		<span class="title">Henry Cejudo</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Deiveson-Figueiredo-110485" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Deiveson-Figueiredo-110485');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601942055184_1601942037Deiveson_Figueiredo.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Flyweight    		</span>
+    		<span class="title">Deiveson Figueiredo</span>
+    	</a>
+    </div>
+</div>
+<div class="col_half">
+    <div class="item w_thumb">
+        <a href="/fighter/Amanda-Nunes-31496" onclick="GAManager.ga('send', 'event', 'RichNav', 'Rankings', '/fighter/Amanda-Nunes-31496');">  
+    		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601321035592_1601321020Amanda_Nunes.jpg" alt="Fighter Thumbnail">
+    		<span class="tag">
+    		    Featherweight    		</span>
+    		<span class="title">Amanda Nunes</span>
+    	</a>
+    </div>
+</div>
+</div>		
+	<div class="col_three last three">
+	<div class="title_more black">
+		<span class="box">Infographics</span>
+	</div>
+		
+</div>
+	    </div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav fight-finder">
+                    <a href="/events" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/events');">
+                        Fight Finder                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="/organizations/Ultimate-Fighting-Championship-2" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/organizations/Ultimate-Fighting-Championship-2');">UFC Fights <span>»</span></a></li>
+                                                                            <li><a href="/organizations/Bellator-Fighting-Championships-1960" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/organizations/Bellator-Fighting-Championships-1960');">Bellator Fights <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/organizations/One-Fighting-Championship-3877" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', 'http://www.sherdog.com/organizations/One-Fighting-Championship-3877');">One Championship Fights <span>»</span></a></li>
+                                                                            <li><a href="/events" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/events');">Full Calendar <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/news/articles/Sherdog-Fight-Finder-A-Guide-For-Regulators-Promoters-Managers-Coaches-and-Fighters-158515" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', 'https://www.sherdog.com/news/articles/Sherdog-Fight-Finder-A-Guide-For-Regulators-Promoters-Managers-Coaches-and-Fighters-158515');">Fight Finder Guide <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+    <div class="content">
+    	<div class="col_three first">
+    <div class="title_more black">
+            <span class="box">Next Fight</span>
+    </div>
+        
+    <div class="item featured_fight">
+       <a href="/events/UFC-on-ABC-1-Holloway-vs-Kattar-87759" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/events/UFC-on-ABC-1-Holloway-vs-Kattar-87759');"> 
+               <span class="big_title"> Holloway<span class="versus"> VS </span>Kattar</span> 
+               <span class="versus_thumbs"> 
+                       <img itemprop="image" class="fighter_1 lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/100/100/_images/fighter/1601262659142_1601262649Max_Holloway.jpg">
+                       <span class="versus">VS</span> 
+                       <img itemprop="image" class="fighter_1 lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/100/100/_images/fighter/1601319452271_1601319443Calvin_Kattar.jpg">
+               </span> 
+               <span class="title">UFC on ABC 1</span> 
+               <span class="date">January, 16, 2021</span> 
+       </a> 
+    </div>
+</div><div class="col_three">
+        <div class="title_more black">
+                <span class="box">Recent Fights</span>
+        </div>
+        
+            
+    <div class="item recent_fight">
+        <a href="/events/UFC-Fight-Night-183-Thompson-vs-Neal-87646" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/events/UFC-Fight-Night-183-Thompson-vs-Neal-87646');">
+           <span class="col_half">
+               <span class="info">
+                       <span class="title">Stephen Thompson</span>
+                       <span class="final_result small win">
+                           win                       </span>
+               </span>
+               <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1392328843815_20140213015717_stephen_thompson.JPG" alt="Stephen Thompson">
+           </span>
+           <span class="versus">vs</span>
+           <span class="col_half right">
+               <span class="info">
+                       <span class="title">Geoff Neal</span>
+                       <span class="final_result small loss">
+                           loss                       </span>
+               </span>
+               <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601326661010_1601326650Geoff_Neal.jpg" alt="Stephen Thompson">
+           </span>
+       </a>
+   </div>
+    
+    <div class="item recent_fight">
+        <a href="/events/UFC-256-Figueiredo-vs-Moreno-87401" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/events/UFC-256-Figueiredo-vs-Moreno-87401');">
+           <span class="col_half">
+               <span class="info">
+                       <span class="title">Deiveson Figueiredo</span>
+                       <span class="final_result small draw">
+                           draw                       </span>
+               </span>
+               <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601942055184_1601942037Deiveson_Figueiredo.jpg" alt="Deiveson Figueiredo">
+           </span>
+           <span class="versus">vs</span>
+           <span class="col_half right">
+               <span class="info">
+                       <span class="title">Brandon Moreno</span>
+                       <span class="final_result small draw">
+                           draw                       </span>
+               </span>
+               <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601320449695_1601320438Brandon_Moreno.jpg" alt="Deiveson Figueiredo">
+           </span>
+       </a>
+   </div>
+    
+    <div class="item recent_fight">
+        <a href="/events/UFC-on-ESPN-19-Hermansson-vs-Vettori-87402" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/events/UFC-on-ESPN-19-Hermansson-vs-Vettori-87402');">
+           <span class="col_half">
+               <span class="info">
+                       <span class="title">Marvin Vettori</span>
+                       <span class="final_result small win">
+                           win                       </span>
+               </span>
+               <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/14717339111DX_8762.jpg" alt="Marvin Vettori">
+           </span>
+           <span class="versus">vs</span>
+           <span class="col_half right">
+               <span class="info">
+                       <span class="title">Jack Hermansson</span>
+                       <span class="final_result small loss">
+                           loss                       </span>
+               </span>
+               <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601316513141_1601316502Jack_Hermansson.jpg" alt="Marvin Vettori">
+           </span>
+       </a>
+   </div>
+</div><div class="col_three last three">
+	<div class="title_more black">
+		<span class="box">Popular Fighters</span>
+	</div>
+	
+    <div class="item w_thumb popular-fighter">
+    <a href="/fighter/Ronda-Rousey-73073" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/fighter/Ronda-Rousey-73073');">  
+		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1392328616736_20131219091702_ronda_rousey.JPG" alt="Title">
+		<span class="title">Ronda Rousey</span>
+		<span class="tag">Bantamweight</span>
+		<span class="tag sub">12 - 2 - 0</span>
+	</a>
+</div>
+<div class="item w_thumb popular-fighter">
+    <a href="/fighter/Conor-McGregor-29688" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/fighter/Conor-McGregor-29688');">  
+		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601260819070_1601260787Conor_McGregor.jpg" alt="Title">
+		<span class="title">Conor McGregor</span>
+		<span class="tag">Welterweight</span>
+		<span class="tag sub">22 - 4 - 0</span>
+	</a>
+</div>
+<div class="item w_thumb popular-fighter">
+    <a href="/fighter/Jon-Jones-27944" onclick="GAManager.ga('send', 'event', 'RichNav', 'Fight Finder', '/fighter/Jon-Jones-27944');">  
+		<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/fighter/1601261499839_1601261483Jon_Jones.jpg" alt="Title">
+		<span class="title">Jon Jones</span>
+		<span class="tag">Light Heavyweight</span>
+		<span class="tag sub">26 - 1 - 0</span>
+	</a>
+</div>
+</div>    </div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav all-access">
+                    <a href="/all-access" onclick="GAManager.ga('send', 'event', 'RichNav', 'All Access', '/all-access');">
+                        All Access                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="/videos" onclick="GAManager.ga('send', 'event', 'RichNav', 'All Access', '/videos');">Videos <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/tag/h-o-f-a" onclick="GAManager.ga('send', 'event', 'RichNav', 'All Access', 'http://www.sherdog.com/tag/h-o-f-a');">Hall of F@#$%&amp;g Awesome  <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/tag/year-end-awards" onclick="GAManager.ga('send', 'event', 'RichNav', 'All Access', 'http://www.sherdog.com/tag/year-end-awards');">Yearly Awards <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/mma-at-20" onclick="GAManager.ga('send', 'event', 'RichNav', 'All Access', 'http://www.sherdog.com/mma-at-20');">MMA at 20 <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/tag/fight-odds" onclick="GAManager.ga('send', 'event', 'RichNav', 'All Access', 'https://www.sherdog.com/tag/fight-odds');">Fight Odds <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+    <div class="content">
+        <div class="col_three first one">
+    <div class="title_more black">
+        <span class="box">Just In - All Access</span>
+    </div>
+    	<div class="item featured">
+		<a href="/news/articles/Sherdogs-2020-YearEnd-Awards-The-Complete-List-177004" onclick="GAManager.ga('send', 'event', 'RichNav', 'AllAccess', '/news/articles/Sherdogs-2020-YearEnd-Awards-The-Complete-List-177004');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/20201231114116_GettyImages1204234554_sm.PNG" alt="Title">
+			<span class="title">Sherdog’s 2020 Year-End Awards: The Complete List</span>
+		</a>
+	</div>
+</div>
+		<div class="col_three first one">
+    <div class="title_more black">
+        <span class="box">Radio</span>
+    </div>
+        <div class="item featured">
+        <a href="/radio/After-the-Bell-Shillan-Duffy-Recap-UFC-Fight-Night-183-5615" onclick="GAManager.ga('send', 'event', 'RichNav', 'AllAccess', '/radio/After-the-Bell-Shillan-Duffy-Recap-UFC-Fight-Night-183-5615');">
+            <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/radio/20201220064422_radio122020.PNG" alt="Title">
+            <span class="title">After the Bell: Shillan &amp; Duffy Recap UFC Fight Night 183</span>
+        </a>
+    </div>
+</div>
+		<div class="col_three first one">
+    <div class="title_more black">
+        <span class="box">Video</span>
+    </div>
+        <div class="item featured">
+        <a href="/videos/videointerview/Rob-Font-Willing-to-Wait-for-Forward-Movement-16386" onclick="GAManager.ga('send', 'event', 'RichNav', 'AllAccess', '/videos/videointerview/Rob-Font-Willing-to-Wait-for-Forward-Movement-16386');">
+            <img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/videos/20210105074851_Interviews_Overlay_sm.PNG" alt="Title">
+            <span class="title">Rob Font Willing to Wait for Forward Movement</span>
+        </a>
+    </div>
+</div>
+		    </div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav pictures">
+                    <a href="/pictures" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', '/pictures');">
+                        Pictures                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="https://www.sherdog.com/pictures" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', 'http://www.sherdog.com/pictures');">Photo Galleries <span>»</span></a></li>
+                                                                            <li><a href="https://www.sherdog.com/tag/infographics" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', 'https://www.sherdog.com/tag/infographics');">Infographics <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+	<div class="content">
+	    <div class="col_two first">
+	<div class="title_more black">
+		<span class="box">Featured gallery</span>
+	</div>
+	
+	    <div class="item featured_gallery">
+    	<a href="/pictures/event/Pictures-Rizin-26-176998" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', '/pictures/event/Pictures-Rizin-26-176998');">
+    		<span class="big_title">Pictures: Rizin 26</span>
+    		<img class="featured_image lazymenu" itemprop="image" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/pictures/20201231054803_S20H8038_thumb.JPG">
+    		<span class="thumbs">
+    		        			    <img itemprop="image" class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/pictures/20201231054801_S20H7979_thumb.JPG">			
+    			    			    <img itemprop="image" class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/pictures/20201231054801_S20H7990_thumb.JPG">			
+    			    			    <img itemprop="image" class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/pictures/20201231054801_S20H7993_thumb.JPG">			
+    			    			    <img itemprop="image" class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/pictures/20201231054802_S20H8019_thumb.JPG">			
+    			    			    <img itemprop="image" class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/pictures/20201231054802_S20H8023_thumb.JPG">			
+    			    			    <img itemprop="image" class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/pictures/20201231054803_S20H8025_thumb.JPG">			
+    			    		</span>
+    		<span class="blurb">
+    			Rizin Fighting Federation hosted Japan's traditional New Year's Eve
+mixed martial arts extravaganza.    		</span>
+    	</a>
+    </div>
+</div>
+		<div class="col_two last">
+	<div class="title_more black">
+		<span class="box">Latest galleries</span>
+	</div>
+	
+		<div class="item w_thumb">
+		<a href="/pictures/event/Pictures-Rizin-26-176998" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', '/pictures/event/Pictures-Rizin-26-176998');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201231053612_S20H8038.JPG" alt="Title">
+			<span class="title">Pictures: Rizin 26</span>
+		</a>
+    </div>
+		<div class="item w_thumb">
+		<a href="/pictures/event/Pictures-UFC-Fight-Night-183-176851" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', '/pictures/event/Pictures-UFC-Fight-Night-183-176851');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201220032634_GettyImages1292168970.JPG" alt="Title">
+			<span class="title">Pictures: UFC Fight Night 183</span>
+		</a>
+    </div>
+		<div class="item w_thumb">
+		<a href="/pictures/event/Pictures-One-Championship-Collision-Course-176846" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', '/pictures/event/Pictures-One-Championship-Collision-Course-176846');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201218062803_ASH7837.JPG" alt="Title">
+			<span class="title">Pictures: One Championship ‘Collision Course’</span>
+		</a>
+    </div>
+		<div class="item w_thumb">
+		<a href="/pictures/event/Pictures-UFC-256-176718" onclick="GAManager.ga('send', 'event', 'RichNav', 'Pictures', '/pictures/event/Pictures-UFC-256-176718');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/_images/thumbnails/20201213062322_GettyImages1290954719.JPG" alt="Title">
+			<span class="title">Pictures: UFC 256</span>
+		</a>
+    </div>
+					
+</div>
+			</div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav forum">
+                    <a href="http://www.sherdog.net/forums/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'http://www.sherdog.net/forums/');">
+                        Forum                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="https://forums.sherdog.com/forums/ufc-discussion.2/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/forums/ufc-discussion.2/');">UFC Discussion <span>»</span></a></li>
+                                                                            <li><a href="https://forums.sherdog.com/forums/worldwide-mma-discussion.61/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/forums/worldwide-mma-discussion.61/');">Worldwide MMA Discussion <span>»</span></a></li>
+                                                                            <li><a href="https://forums.sherdog.com/forums/boxing-discussion.53/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/forums/boxing-discussion.53/');">Boxing Discussion <span>»</span></a></li>
+                                                                            <li><a href="https://forums.sherdog.com/#training-discussion.10" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/#training-discussion.10');">Training Discussion <span>»</span></a></li>
+                                                                            <li><a href="https://forums.sherdog.com/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/');">All Forums <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+	<div class="content">
+		<div class="col_three first">
+	<div class="title_more black">
+		<span class="box">Featured Threads</span>
+	</div>
+		<div class="item featured">
+		<a href="http://forums.sherdog.com/forums/shoopville.94/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'http://forums.sherdog.com/forums/shoopville.94/');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/featured/standard/20180224084527_giphy.GIF" alt="Title">
+			<span class="title">Shoopville</span>
+		</a>
+	</div>
+</div><!-- Popular Threads -->
+<div class="col_three first">
+	<div class="title_more black">
+		<span class="box">Popular threads</span>
+	</div>
+	
+		<div class="item w_thumb">
+		<a href="https://forums.sherdog.com/threads/all-time-goat-poll.3916359/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/all-time-goat-poll.3916359/');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/img/default_300x300.jpg" alt="Title">
+			<span class="title">All Time GOAT Poll</span>
+		</a>
+    </div>
+	<div class="item w_thumb">
+		<a href="https://forums.sherdog.com/threads/shoop-that-incredulous-cormier-drug-wars.2804589/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/shoop-that-incredulous-cormier-drug-wars.2804589/');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/img/default_300x300.jpg" alt="Title">
+			<span class="title">Shoop that Incredulous Cormier / Drug Wars</span>
+		</a>
+    </div>
+	<div class="item w_thumb">
+		<a href="https://forums.sherdog.com/threads/the-froot-shoop-contest-voting-thread.4071619/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/the-froot-shoop-contest-voting-thread.4071619/');">
+			<img class="lazymenu" src="/image_crop/44/44/img/default_300x300.jpg" data-original="/image_crop/44/44/img/default_300x300.jpg" alt="Title">
+			<span class="title">The Froot Shoop Voting Thread</span>
+		</a>
+    </div>
+</div><div class="col_three last">
+	<div class="title_more black">
+		<span class="box">Latest Threads</span>
+	</div>
+
+		<div class="item simple_link">
+		<a href="https://forums.sherdog.com/threads/4155221/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/4155221/')">
+		    <span class="title">
+		        What are the chances Dustin's chin is completely destroyed after
+the...	        </span>
+	    </a>
+	</div>
+	<div class="item simple_link">
+		<a href="https://forums.sherdog.com/threads/4155217/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/4155217/')">
+		    <span class="title">
+		        I didnt know Sean Omalley was on street beef	        </span>
+	    </a>
+	</div>
+	<div class="item simple_link">
+		<a href="https://forums.sherdog.com/threads/4155216/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/4155216/')">
+		    <span class="title">
+		        UFC class action certified!	        </span>
+	    </a>
+	</div>
+	<div class="item simple_link">
+		<a href="https://forums.sherdog.com/threads/4155211/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/4155211/')">
+		    <span class="title">
+		        The truth hurts..	        </span>
+	    </a>
+	</div>
+	<div class="item simple_link">
+		<a href="https://forums.sherdog.com/threads/4155209/" onclick="GAManager.ga('send', 'event', 'RichNav', 'Forum', 'https://forums.sherdog.com/threads/4155209/')">
+		    <span class="title">
+		        Should UFC include Top 15 Finance Rankings?	        </span>
+	    </a>
+	</div>
+</div>
+		
+	</div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                                                <div class="button richnav boxing">
+                    <a href="/tag/boxing" onclick="GAManager.ga('send', 'event', 'RichNav', 'Boxing', '/tag/boxing');">
+                        Boxing                    </a>
+                    <div class="dropdown">
+                        <div class="content">
+                            <div class="col_left">
+                                <ul>
+                                                                            <li><a href="/tag/boxing" onclick="GAManager.ga('send', 'event', 'RichNav', 'Boxing', '/tag/boxing');">Boxing <span>»</span></a></li>
+                                                                    </ul>
+                                                            </div>
+                            <div class="col_right">
+    <div class="content">
+        <div class="col_boxing_news">
+    <div class="title_more black">
+        <span class="box">Boxing News</span>
+    </div>
+    <div class="boxing_news">
+        	<div class="item featured">
+		<a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Jan-3-2021-177022" onclick="GAManager.ga('send', 'event', 'RichNav', 'Boxing', '/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Jan-3-2021-177022');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/20210103121233_Screenshot_20210102_19_09_10.PNG" alt="Title">
+			<span class="title">Weekend Boxing Knockouts &amp; Highlights Roundup: Jan. 3, 2021</span>
+		</a>
+	</div>
+	<div class="item featured">
+		<a href="/news/news/Paige-VanZant-to-Make-BKFC-Debut-Against-Britain-Hart-at-BKFC-16-on-Feb-5-177003" onclick="GAManager.ga('send', 'event', 'RichNav', 'Boxing', '/news/news/Paige-VanZant-to-Make-BKFC-Debut-Against-Britain-Hart-at-BKFC-16-on-Feb-5-177003');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/1609455406PVZ.jpg" alt="Title">
+			<span class="title">Paige VanZant to Make BKFC Debut Against Britain Hart at BKFC 16 on
+Feb. 5</span>
+		</a>
+	</div>
+	<div class="item featured">
+		<a href="/news/news/Report-UFC-PayPerView-ESPN43-Subscription-Prices-to-Increase-in-2021-176994" onclick="GAManager.ga('send', 'event', 'RichNav', 'Boxing', '/news/news/Report-UFC-PayPerView-ESPN43-Subscription-Prices-to-Increase-in-2021-176994');">
+			<img class="lazymenu" src="/image_crop/200/125/img/default_300x300.jpg" data-original="/image_crop/200/125/_images/thumbnails/20201230100522_20120614102505_DSC05873.JPG" alt="Title">
+			<span class="title">Report: UFC Pay-Per-View, ESPN+ Subscription Prices to Increase in
+2021</span>
+		</a>
+	</div>
+    </div>
+</div>
+		    </div>
+</div>                        </div>
+                        <div class="footer"></div>
+                    </div>
+                </div>
+                    <!--
+        <div class="button richnav fight_odds">
+            <a href="/fight-odds">Fight Odds</a>
+        </div>
+-->
+    </div>
+</nav>        </header>
+        <div class="content top_ads">
+            <div class="ads top_ad">
+                <div class="ad leaderboard"><div id="ad728" data-id="ad728" class="gpt-ad"></div></div>
+            </div>
+        </div>
+        <div class="content">
+	<div class="col_left">
+
+				<section>
+	<div class="module black">
+    	<div class="module_header">
+			<h2>Fight finder</h2>
+        </div>
+		<div class="content">
+			<div class="tool_box">
+				<form method="get" action="/stats/fightfinder">
+					<div class="form_fightfinder">
+                        <input name="SearchTxt" id="SearchTxt" type="text" placeholder="Type a Fighter Name, Lastname or Nickname ..." class="search fight_finder" value="UFC on ABC: Holloway vs. Kattar">
+                        <div class="more_search">
+                        <div id="weight_class_frm">
+                        <span class="trending_fighters">Filter Search by Weight Class</span>
+                                <select name="weight" id="weight" class="search">
+                                    <option value="">Select Weight Class</option>
+                                    <option value="11">Catchweight</option>
+<option value="17">Minimumweight</option>
+<option value="8">Pound for Pound</option>
+<option value="15">Atomweight</option>
+<option value="13">Strawweight</option>
+<option value="10">Flyweight</option>
+<option value="9">Bantamweight</option>
+<option value="7">Featherweight</option>
+<option value="6">Lightweight</option>
+<option value="5">Welterweight</option>
+<option value="4">Middleweight</option>
+<option value="3">Light Heavyweight</option>
+<option value="2">Heavyweight</option>
+<option value="1">Super Heavyweight</option>
+                                </select>
+                            </div>
+                            <div id="association_frm">
+                            <span class="trending_fighters">Filter Search by Association</span>
+                                <!-- Association Template -->
+                                <div id="autocomplete_association_template" data-format="{name}" style="display:none"><span>{name}</span></div>
+                                <!-- End of Association Template -->
+                                <input name="association" value="" data-autocorrect="true" data-refresh_slave_on_item_focus="true" type="text" placeholder="Filter by Association" class="search filter autocomplete" data-source="/search/associations/" data-template="#autocomplete_association_template">
+                        </div>
+                                                        <span class="trending_fighters">Top trending fighters: 
+                                <a href="/fighter/Tony-Ferguson-31239">Tony Ferguson</a> | <a href="/fighter/Khabib-Nurmagomedov-56035">Khabib Nurmagomedov</a> | <a href="/fighter/Conor-McGregor-29688">Conor McGregor</a> | <a href="/fighter/Jorge-Masvidal-7688">Jorge Masvidal</a> | <a href="/fighter/Justin-Gaethje-46648">Justin Gaethje</a> | <a href="/fighter/Jon-Jones-27944">Jon Jones</a>                                </span>
+                                                <input type="submit" value="Go" class="go">
+                        </div>
+                    </div>
+					<div class="more_search advance">
+					<span class="trending_fighters">Or select an organization</span>
+                    <div id="organization_frm">
+							<!-- Organization Template -->
+							<div id="autocomplete_organization_template" data-format="{name}" data-slaveinput="#organization_url" data-slaveformat="{url}" style="display:none">
+								<table cellpadding="0" cellspacing="0"><tbody><tr><td width="37" height="37"><img data-src="{image}" width="32"></td><td>{name}</td></tr></tbody></table>
+							</div>
+							<!-- End of Organization Template -->
+							<script type="text/javascript">
+								function autocomplete_organization_select(data) {
+									if ((data.url != null) && (data.url != "")) {
+										document.location = data.url;
+									}
+								}
+							</script>
+							<input id="organization_url" type="hidden" value="">
+							<input data-autocorrect="false" data-refresh_slave_on_item_focus="true" type="text" placeholder="Search by organization" class="search filter autocomplete" data-source="/search/organizations/" data-template="#autocomplete_organization_template" data-onselect="autocomplete_organization_select">
+						</div>
+					</div>
+				</form>
+							</div>
+		</div>
+	</div>
+</section>
+				
+				<section>
+                	<div class="module tabbed">
+                    	<div class="tab_menu">
+                        	<span>Event Results List</span>
+                        </div>
+                        <div class="content table">
+                        	<table class="fightfinder_result">
+                            	<tbody><tr class="table_head">
+                                	<td class="col_one"></td>
+                                    <td class="col_two">Event</td>
+                                    <td class="col_three">Organization</td>
+                                </tr>
+                                                                        <tr class="class='odd'" onclick="document.location='/events/UFC-on-ABC-1-Holloway-vs-Kattar-87759';">
+                                        <td align="middle"><span class="date"><span class="month">Jan</span><span class="day">16</span><span class="year">2021</span></span></td>
+                                        <td><a href="/events/UFC-on-ABC-1-Holloway-vs-Kattar-87759">UFC on ABC 1 - Holloway vs. Kattar</a></td>
+                                        <td>Ultimate Fighting Championship (UFC)</td>
+                                        </tr>
+                                                                    </tbody></table>
+                        </div>
+                                            </div>
+                </section>
+
+
+					</div>
+	<!-- RIGHT COLUMN -->
+	<!-- RIGHT COLUMN -->
+<div class="col_right">
+            <div class="ads"><div class="ad mediumrectangle"><div id="ad300" data-id="ad300" class="gpt-ad"></div></div></div>
+    
+    
+    <!-- Fight Finder Templates -->
+	<div id="autocomplete_template" data-format="{firstname} { &quot;nickname&quot; }{lastname}" data-slaveinput="#sample" data-slaveformat="{id}" style="display:none">
+			<table cellpadding="0" cellspacing="0"><tbody><tr><td width="37" height="37"><img data-src="{image}" width="32"></td><td>{firstname} { "nickname" }{lastname}</td></tr></tbody></table>
+	</div>
+	
+	<div id="autocomplete_template_Fighter" data-format="{firstname} { &quot;nickname&quot; }{lastname}" data-slaveinput="#sample" data-slaveformat="{id}" style="display:none">
+			<table cellpadding="0" cellspacing="0"><tbody><tr><td width="37" height="37"><img data-src="{image}" width="32"></td><td>{firstname} { "nickname" }{lastname}</td></tr></tbody></table>
+	</div>
+	
+	<div id="autocomplete_template_Event" data-format="{name} - {title}" data-slaveinput="#sample" data-slaveformat="{id}" style="display:none">
+			<table cellpadding="0" cellspacing="0"><tbody><tr><td width="37" height="37"><img data-src="{image}" width="32"></td><td>{name} - {title}</td></tr></tbody></table>
+	</div>
+<!-- End of Fight Finder Templates -->
+
+<script language="javascript">
+function autocomplete_select(data) {
+	if ((data.url != null) && (data.url != "")) {
+		document.location = data.url;
+	}
+}
+</script>
+
+<div class="fight_finder">
+	<div class="module">
+        <title>&lt;h2&gt;Fight Finder&lt;/h2&gt;</title>
+        <div class="content">
+            <div class="sponsor">Sponsored by</div>
+                <form action="/stats/fightfinder" method="get">
+                <input data-groupfield="source" name="SearchTxt" data-autocorrect="false" data-offset="-105px 0" type="text" placeholder="Search fighters / Events..." class="search autocomplete" data-source="/search/fightfinder/" data-template="#autocomplete_template" data-onselect="autocomplete_select">
+                <input value="Go" type="submit" class="go">
+                </form>
+                <div class="trending_fighters">
+                    <h3>Top trending fighters</h3>
+                    <a href="/fighter/Tony-Ferguson-31239"><h4>Tony Ferguson</h4></a> | <a href="/fighter/Khabib-Nurmagomedov-56035"><h4>Khabib Nurmagomedov</h4></a> | <a href="/fighter/Conor-McGregor-29688"><h4>Conor McGregor</h4></a> | <a href="/fighter/Jorge-Masvidal-7688"><h4>Jorge Masvidal</h4></a> | <a href="/fighter/Justin-Gaethje-46648"><h4>Justin Gaethje</h4></a> | <a href="/fighter/Jon-Jones-27944"><h4>Jon Jones</h4></a>            </div>
+        </div>
+    </div>
+</div>
+    <div id="events_fights" class="module tabbed active_tab">
+    <div class="module_header">
+        <h2 class="header_sprite events_fights">Events/Fights</h2>
+    </div>
+    <div class="tab_menu">
+        <span>
+            <a href="/organizations/Ultimate-Fighting-Championship-2" id="ufc_tab">UFC</a>                                        <a href="/organizations/Dana-Whites-Contender-Series-12411" id="dwcs_tab">DWCS</a>
+                        
+                        
+                                <a href="/organizations/One-Championship-3877" id="one_tab">One</a>
+                            
+                        
+            <a href="/events" id="more_tab">More &gt;</a>
+        </span>
+    </div>
+    
+    <div class="content" style="display:none;" id="ufc_tab">
+        <ul class="left_side">
+                        <li>
+                <a href="/events/UFC-on-ABC-1-Holloway-vs-Kattar-87759">
+                    <h4 class="title">UFC on ABC 1</h4>
+                    <h3 class="fighters">Holloway<strong> VS </strong>Kattar</h3>
+                    <span class="fighters_pics">
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1601262659142_1601262649Max_Holloway.jpg" alt="Max 'Blessed' Holloway" title="Max 'Blessed' Holloway">
+                        <span class="versus">Versus</span>
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1601319452271_1601319443Calvin_Kattar.jpg" alt="Calvin 'The Boston Finisher' Kattar" title="Calvin 'The Boston Finisher' Kattar">
+                    </span>
+                    <span class="date">January, 16, 2021</span>
+                </a>
+            </li>
+                        <li>
+                <a href="/events/UFC-on-ESPN-20-Chiesa-vs-Magny-88171">
+                    <h4 class="title">UFC on ESPN 20</h4>
+                    <h3 class="fighters">Chiesa<strong> VS </strong>Magny</h3>
+                    <span class="fighters_pics">
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1601317645269_1601317633Michael_Chiesa.jpg" alt="Michael 'Maverick' Chiesa" title="Michael 'Maverick' Chiesa">
+                        <span class="versus">Versus</span>
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1391301603969_20130223051213_neil_magny.JPG" alt="Neil 'Haitian Sensation' Magny" title="Neil 'Haitian Sensation' Magny">
+                    </span>
+                    <span class="date">January, 20, 2021</span>
+                </a>
+            </li>
+                </ul>
+        <ul class="right_side ">
+                                                        <li>
+                <a href="/events/UFC-on-ABC-1-Holloway-vs-Kattar-87759">
+                    <span class="date"><span class="month">Jan</span><span class="day">16</span><span class="year">2021</span></span>
+                    UFC on ABC 1 - Holloway vs. Kattar                </a>
+            </li>     
+                                    <li>
+                <a href="/events/UFC-on-ESPN-20-Chiesa-vs-Magny-88171">
+                    <span class="date"><span class="month">Jan</span><span class="day">20</span><span class="year">2021</span></span>
+                    UFC on ESPN 20 - Chiesa vs. Magny                </a>
+            </li>     
+                                    <li>
+                <a href="/events/UFC-257-McGregor-vs-Poirier-2-87798">
+                    <span class="date"><span class="month">Jan</span><span class="day">23</span><span class="year">2021</span></span>
+                    UFC 257 - McGregor vs. Poirier 2                </a>
+            </li>     
+                                    <li>
+                <a href="/events/UFC-Fight-Night-Overeem-vs-Volkov-87802">
+                    <span class="date"><span class="month">Feb</span><span class="day">06</span><span class="year">2021</span></span>
+                    UFC Fight Night - Overeem vs. Volkov                </a>
+            </li>     
+                                    <li class="last">
+                <a href="/events/UFC-258-Usman-vs-Burns-87797">
+                    <span class="date"><span class="month">Feb</span><span class="day">13</span><span class="year">2021</span></span>
+                    UFC 258 - Usman vs. Burns                </a>
+            </li>     
+                        </ul>
+</div><div class="content" style="display:none;" id="dwcs_tab">
+        <ul class="right_side  full">
+            </ul>
+</div><div class="content" style="display:none;" id="one_tab">
+        <ul class="left_side">
+                        <li>
+                <a href="/events/One-Championship-Unbreakable-88351">
+                    <h4 class="title">One Championship</h4>
+                    <h3 class="fighters">Aoki<strong> VS </strong>Nakashima</h3>
+                    <span class="fighters_pics">
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1329292572482_20090312063722_shinyaaoki.JPG" alt="Shinya 'Tobikan Judan' Aoki" title="Shinya 'Tobikan Judan' Aoki">
+                        <span class="versus">Versus</span>
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/20180727050941_nakashima.JPG" alt="James 'Nako' Nakashima" title="James 'Nako' Nakashima">
+                    </span>
+                    <span class="date">January, 22, 2021</span>
+                </a>
+            </li>
+                        <li>
+                <a href="/events/One-Championship-TBA-88180">
+                    <h4 class="title">One Championship</h4>
+                    <h3 class="fighters">Moraes<strong> VS </strong>Johnson</h3>
+                    <span class="fighters_pics">
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1366153898mikinho.jpg" alt="Adriano 'Mikinho / Black Diamond' Moraes" title="Adriano 'Mikinho / Black Diamond' Moraes">
+                        <span class="versus">Versus</span>
+                        <img class="lazy" src="/image_crop/72/72/_images/fighter_small_default.jpg" data-original="/image_crop/72/72/_images/fighter/1398042375985_20140420060025_1MG_0022.JPG" alt="Demetrious 'Mighty Mouse' Johnson" title="Demetrious 'Mighty Mouse' Johnson">
+                    </span>
+                    <span class="date">February, 24, 2021</span>
+                </a>
+            </li>
+                </ul>
+        <ul class="right_side ">
+                                                        <li>
+                <a href="/events/One-Championship-Unbreakable-88351">
+                    <span class="date"><span class="month">Jan</span><span class="day">22</span><span class="year">2021</span></span>
+                    One Championship - Unbreakable                </a>
+            </li>     
+                                    <li>
+                <a href="/events/One-Championship-Unbreakable-2-88352">
+                    <span class="date"><span class="month">Jan</span><span class="day">29</span><span class="year">2021</span></span>
+                    One Championship - Unbreakable 2                </a>
+            </li>     
+                                    <li>
+                <a href="/events/One-Championship-Unbreakable-3-88353">
+                    <span class="date"><span class="month">Feb</span><span class="day">05</span><span class="year">2021</span></span>
+                    One Championship - Unbreakable 3                </a>
+            </li>     
+                                    <li class="last">
+                <a href="/events/One-Championship-TBA-88180">
+                    <span class="date"><span class="month">Feb</span><span class="day">24</span><span class="year">2021</span></span>
+                    One Championship - TBA                </a>
+            </li>     
+                        </ul>
+</div>    <div class="footer">
+        <span class="read_more"><a id="more_organization" href="#">More</a></span>
+    </div>
+</div>
+
+    <div id="ad300601" data-id="ad300601" class="gpt-ad"></div>
+    
+    
+    
+    <div class="module">
+	<div class="module_header">
+		<h2 class="header_sprite latest_articles"><span>Latest </span>Articles</h2>
+	</div>
+    <div class="content">
+        <ul class="module_list">
+        	            <li>
+            	                <a href="/news/articles/The-Bottom-Line-A-Curious-Approach-177046"><img class="lazy" src="/image_crop/125/75/img/default_300x300.jpg" data-original="/image_crop/125/75/_images/thumbnails/20210105073006_250.PNG"></a>
+                <span class="blurb">
+                    <span class="title"><a href="/news/articles/The-Bottom-Line-A-Curious-Approach-177046">The Bottom Line: A Curious Approach</a></span>
+                </span>
+            </li>
+                        <li>
+            	                <a href="/news/articles/Rivalries-Nick-Diaz-177049"><img class="lazy" src="/image_crop/125/75/img/default_300x300.jpg" data-original="/image_crop/125/75/_images/thumbnails/20210105114446_250.PNG"></a>
+                <span class="blurb">
+                    <span class="title"><a href="/news/articles/Rivalries-Nick-Diaz-177049">Rivalries: Nick Diaz</a></span>
+                </span>
+            </li>
+                        <li>
+            	                <a href="/news/articles/Forecasting-Bellator-MMA-Champions-Class-of-2021-177044"><img class="lazy" src="/image_crop/125/75/img/default_300x300.jpg" data-original="/image_crop/125/75/_images/thumbnails/20210105050642_bellator_sm.JPG"></a>
+                <span class="blurb">
+                    <span class="title"><a href="/news/articles/Forecasting-Bellator-MMA-Champions-Class-of-2021-177044">Forecasting Bellator MMA Champions, Class of 2021</a></span>
+                </span>
+            </li>
+                        <li>
+            	                <a href="/news/articles/The-Rizin-Bantamweight-Title-A-Visual-History-177043"><img class="lazy" src="/image_crop/125/75/img/default_300x300.jpg" data-original="/image_crop/125/75/_images/thumbnails/1609848605rizinbw640-010521.png"></a>
+                <span class="blurb">
+                    <span class="title"><a href="/news/articles/The-Rizin-Bantamweight-Title-A-Visual-History-177043">The Rizin Bantamweight Title: A Visual History</a></span>
+                </span>
+            </li>
+                        <li>
+            	                <a href="/news/articles/Opinion-The-Power-of-Simplicity-Even-in-2020-177027"><img class="lazy" src="/image_crop/125/75/img/default_300x300.jpg" data-original="/image_crop/125/75/_images/thumbnails/160975636020200614vettori.jpg"></a>
+                <span class="blurb">
+                    <span class="title"><a href="/news/articles/Opinion-The-Power-of-Simplicity-Even-in-2020-177027">Opinion: The Power of Simplicity, Even in 2020</a></span>
+                </span>
+            </li>
+                    </ul>
+    </div>
+    <div class="footer">
+    	    	<span class="read_more"><a href="/news/articles/list">View more</a></span>
+    	    </div>
+</div>
+    <div class="module">
+                <div class="module_header">
+                    <h2 class="header_sprite sherdog_blogs">
+                        <span>Sherdog </span>Blogs
+                    </h2>
+                </div>
+                <div class="content">
+                    <ul class="simple_list"><li><a href="/blog/This-Day-in-MMA-History-Jan-4-177029">This Day in MMA History: Jan. 4</a></li><li><a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Jan-3-2021-177022">Weekend Boxing Knockouts &amp; Highlights Roundup: Jan. 3, 2021</a></li><li><a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Dec-27-2020-176952">Weekend Boxing Knockouts &amp; Highlights Roundup: Dec. 27, 2020</a></li><li><a href="/blog/Weekend-Boxing-Knockouts-Highlights-Roundup-Dec-20-2020-176864">Weekend Boxing Knockouts &amp; Highlights Roundup: Dec. 20, 2020</a></li><li class="last"><a href="/blog/Weekend-Boxing-Knockouts-Roundup-Dec-13-2020-176723">Weekend Boxing Knockouts Roundup: Dec. 13, 2020</a></li></ul>
+                </div>
+                <div class="footer">
+                    <span class="read_more">
+                        <a href="/blog/">View more</a>
+                    </span>
+                </div>
+            </div>
+    <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+        <div class="fb-widget module">
+            <div class="fb-like-box fb_iframe_widget" data-href="https://www.facebook.com/OfficialSherdog" data-width="295" data-show-faces="true" data-stream="false" data-colorscheme="dark" data-border-color="#000000" data-header="false" fb-xfbml-state="parsed" fb-iframe-plugin-query="app_id=&amp;color_scheme=dark&amp;container_width=292&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FOfficialSherdog&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=295"><span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe name="f37ff957f5f57c8" width="295px" height="1000px" data-testid="fb:like_box Facebook Social Plugin" title="fb:like_box Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/plugins/like_box.php?app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df28a88e58a20d34%26domain%3Dwww.sherdog.com%26origin%3Dhttps%253A%252F%252Fwww.sherdog.com%252Ff1a25562055aba8%26relation%3Dparent.parent&amp;color_scheme=dark&amp;container_width=292&amp;header=false&amp;href=https%3A%2F%2Fwww.facebook.com%2FOfficialSherdog&amp;locale=en_US&amp;sdk=joey&amp;show_faces=true&amp;stream=false&amp;width=295" style="border: none; visibility: hidden;"></iframe></span></div>
+        </div>
+    
+    
+    
+    <div id="social_widget" style="width: 300px; height: 0px; position: relative; overflow: hidden;"></div>
+
+        <div class="ads"><div class="ad mediumrectangle"><div id="ad300st" data-id="ad300st" class="gpt-ad-lazy sticky-ad"></div></div></div>
+    </div>
+<!-- END OF RIGHT COLUMN -->
+
+<!-- clear left and right columns in the content -->
+<br style="clear:both">	<!-- END OF RIGHT COLUMN -->
+</div>        <footer>
+	<div id="footer">
+		<img src="https://www1-cdn.sherdog.com/2799/img/w/sherdog_dog.gif" alt="Dog" class="the_dog">
+		<div class="footer-about">
+    		Sherdog.com is a property of <a href="http://www.mandatory.com/">Mandatory</a>, 
+    		an <a href="http://www.evolvemediallc.com/">Evolve Media, LLC</a> company.<br>©2021 All Rights Reserved.<br>
+    		<a href="/download-mobile-app">Mobile App</a> | <a href="http://www.mandatory.com/privacy.php?site=www.sherdog.com" rel="nofollow">Privacy Policy</a> | <a href="http://www.mandatory.com/termsofuse.php?site=www.sherdog.com" rel="nofollow">Terms of Use</a> | <a href="/syndication.php">RSS</a> | <a href="http://www.mandatory.media/#/contact" rel="nofollow">Advertise</a> | <a href="/contact" rel="nofollow">Contact</a> | <a href="http://www.mandatory.com/cookies" rel="nofollow"><img src="https://www4-cdn.sherdog.com/2799/img/adchoices.png" style="margin: 0 3px -4px 0">AdChoices</a>
+    		<br><br>
+		</div>
+	    <div style="position: absolute; left: -999em">
+	        monitoring_string = "5eb5a0f65cbe346d74f978e14db1b00d"
+		monitoring_string = "5eb5a0f65cbe346d74f978e14db1b00d"
+	    </div>
+	</div>
+</footer>
+    </div>
+
+    <script type="text/javascript">
+        // Twitter code
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+    </script>
+
+    <script src="https://www2-cdn.sherdog.com/2799/js/cookie_notice.js" defer="defer"></script>
+
+    
+    <!-- QUANTCAST/CONTENTIQ CONNECTION -->
+<script type="text/javascript" src="//dashboard.evolveplatform.net/set_quantcast_tag.js?scrolldepth=true&amp;ord=2055479171686"></script>
+<!-- END QUANTCAST/CONTENTIQ CONNECTION -->
+    <!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2012 Nielsen Online -->
+<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js">
+</script>
+<script type="text/javascript">
+ var pvar = { cid: "au-evolve", content: "0", server: "secure-au" };
+ var trac = nol_t(pvar);
+ trac.record().post();
+</script>
+<noscript>
+&lt;div&gt;&lt;img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=au-evolve&amp;amp;cg=0&amp;amp;cc=1&amp;amp;ts=noscript" width="1" height="1" alt="" /&gt;&lt;/div&gt;
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+        
+<div class="sum-importnt-contnt" style="width: 32px !important; height: 32px !important; position: fixed !important; left: -32px !important; top: -32px !important; display: block;"><span style="color: transparent;">sponsored</span></div><div class="banner_slot" style="width: 32px !important; height: 32px !important; position: fixed !important; left: -32px !important; top: -32px !important; display: block;"><span style="color: transparent;">sponsored</span></div><div class="postad" style="width: 32px !important; height: 32px !important; position: fixed !important; left: -32px !important; top: -32px !important; display: block;"><span style="color: transparent;">sponsored</span></div><iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://platform.twitter.com/widgets/widget_iframe.96fd96193cc66c3e11d4c5e4c7c7ec97.html?origin=https%3A%2F%2Fwww.sherdog.com" title="Twitter settings iframe" style="display: none;"></iframe><iframe src="https://cdn-gl.imrworldwide.com/novms/html/ls.html" height="0" width="0" id="lsframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" title="Twitter analytics iframe" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;"></iframe><iframe src="https://tpc.googlesyndication.com/safeframe/1-0-23/html/container.html" id="adm__sf__hidden__test" scrolling="no" frameborder="0" name="1-0-23;70;&lt;script&gt;window.parent &amp;&amp; window.parent.postMessage(&quot;557&quot;,&quot;*&quot;)&lt;/script&gt;{}" style="border: 0px; vertical-align: bottom; width: 32px !important; height: 32px !important; position: fixed !important; left: -32px !important; top: -32px !important; display: block;"></iframe></body></html>
